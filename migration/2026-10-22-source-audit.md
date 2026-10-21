@@ -21,7 +21,7 @@ Primary files inspected:
 ## 2. Issue / PR state
 
 - Issue #513 is OPEN and records the PI-approved-in-chat design direction and non-interference contract.
-- PR #562 is OPEN, UNMERGED, and GitHub reports mergeable=false. Its recorded base SHA (9114300e306abc908ab1fe1724faa7957ad728b9) predates the inspected main head above; it must be refreshed/reviewed in the main repository before its contents can be accepted.
+- PR #562 is OPEN and UNMERGED. At first inspection GitHub returned mergeable=false; a later recheck returned mergeable=true. Its recorded base SHA (9114300e306abc908ab1fe1724faa7957ad728b9) predates the inspected main head above. Mergeability is only a technical conflict hint: the PR's diff and required validation still need review against current main before acceptance. This Sidecar bootstrap does not merge or update PR #562.
 - PR #562 proposes DECISION_LOG D-021 and governance/archive/2026-10-21-pre-delete-chat-archaeology.md. Neither proposed file is treated here as accepted main truth.
 - PR #514 is CLOSED without merge and explicitly says it was superseded by the refreshed PR #562. It is not the current implementation PR.
 - The accepted main archive's section 7.1 still points to Issue #513 / PR #514 and describes it as open. That pointer is stale. This sidecar records the correction as a migration note; it does not silently edit the main archive or treat the sidecar as authority over main.
