@@ -1,0 +1,40 @@
+schema_version: "1.0"
+repository: "15937-ass/ziwei-research-ledger"
+source_repository: "15937-ass/ziwei-state-space"
+source_ref: "main"
+last_seen_main_sha: "f6944c896efd8f215d4e7d9d89f9fa4db84759f6"
+last_seen_main_checked_at: "2026-10-22T22:00:00+08:00"
+checkpoint_mode: "CURATED_BOOTSTRAP_BASELINE"
+history_replay_complete: false
+research_schema_version: "1.0"
+migration_status: "CURATED_BOOTSTRAP_CANDIDATE"
+seeded_events:
+  - "RM-2026-001"
+  - "RM-2026-002"
+  - "RM-2026-003"
+  - "RM-2026-004"
+seeded_claims:
+  - "CL-001"
+  - "CL-002"
+  - "CL-003"
+  - "CL-004"
+  - "CL-005"
+seeded_theory_records:
+  - "TE-001"
+  - "TE-002"
+  - "TE-003"
+  - "TE-004"
+concept_events:
+  - "CE-2026-001"
+paper_maps:
+  - "PM-P1-FORMALIZATION"
+evidence_packs:
+  - "EP-001"
+known_open_sources:
+  - "https://github.com/15937-ass/ziwei-state-space/issues/513"
+  - "https://github.com/15937-ass/ziwei-state-space/pull/562"
+notes:
+  - "This is a curated baseline over selected R2/R3 topics, not a complete replay of all historical commits or chats."
+  - "PR #562 is open and unmerged; its proposed D-021 and archaeology file are not accepted main truth."
+  - "The main-repository archive has an outdated pointer to PR #514; PR #514 is closed unmerged and explicitly superseded by PR #562."
+  - "No Product/Knowledge dependency or GitHub Actions workflow is introduced."
