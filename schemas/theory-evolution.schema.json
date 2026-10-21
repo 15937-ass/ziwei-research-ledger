@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Theory Evolution Record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "record_type",
+    "theory_id",
+    "title",
+    "status",
+    "epistemic_class",
+    "old_model",
+    "observed_limitations",
+    "current_model",
+    "rationale",
+    "consequences",
+    "what_remains_valid",
+    "claim_effects",
+    "provenance",
+    "boundaries",
+    "captured_at",
+    "supersedes",
+    "superseded_by"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_type": {
+      "const": "THEORY_EVOLUTION"
+    },
+    "theory_id": {
+      "type": "string",
+      "pattern": "^TE-\\d{3}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "APPROVED_RATIONALE",
+        "PROVISIONAL_RESEARCH_NOTE",
+        "CANONICAL_METHOD_BOUNDARY",
+        "OPEN",
+        "SUPERSEDED"
+      ]
+    },
+    "epistemic_class": {
+      "enum": [
+        "PROJECT_METHOD",
+        "RESEARCH_NORMALIZATION",
+        "RESEARCH_HYPOTHESIS",
+        "SOURCE_DERIVED",
+        "EMPIRICAL"
+      ]
+    },
+    "old_model": {
+      "type": "string"
+    },
+    "observed_limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "current_model": {
+      "type": "string"
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "consequences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "what_remains_valid": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claim_effects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "url",
+          "authority_status"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "authority_status": {
+            "enum": [
+              "ACCEPTED_MAIN",
+              "MERGED_PR",
+              "OPEN_ISSUE",
+              "UNMERGED_PR",
+              "CLOSED_UNMERGED_PR",
+              "CHAT_CONTEXT",
+              "DERIVED_SYNTHESIS"
+            ]
+          },
+          "repository_path": {
+            "type": "string"
+          },
+          "blob_sha": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "boundaries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "captured_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "superseded_by": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
