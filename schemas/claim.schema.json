@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Claim",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "record_type",
+    "claim_id",
+    "title",
+    "claim",
+    "claim_domain",
+    "evidence_basis",
+    "status",
+    "source_status",
+    "implementation_status",
+    "internal_fidelity",
+    "empirical_status",
+    "causal_status",
+    "maturity_note",
+    "wording_ceiling",
+    "evidence_refs",
+    "limitations",
+    "last_updated",
+    "supersedes",
+    "superseded_by"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_type": {
+      "const": "CLAIM"
+    },
+    "claim_id": {
+      "type": "string",
+      "pattern": "^CL-\\d{3}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_domain": {
+      "enum": [
+        "PROJECT_METHOD",
+        "RESEARCH_HYPOTHESIS",
+        "ZHONGZHOU_SOURCE_INTERPRETATION",
+        "EMPIRICAL_FINDING",
+        "PRODUCT_BEHAVIOR",
+        "GOVERNANCE"
+      ]
+    },
+    "evidence_basis": {
+      "enum": [
+        "PROJECT_ARTIFACT",
+        "CLASSICAL_SOURCE",
+        "RESEARCH_HYPOTHESIS",
+        "EMPIRICAL_DATA",
+        "CHAT_CONTEXT",
+        "MIXED"
+      ]
+    },
+    "status": {
+      "enum": [
+        "ACTIVE",
+        "PROVISIONAL",
+        "SUPERSEDED",
+        "WITHDRAWN"
+      ]
+    },
+    "source_status": {
+      "enum": [
+        "EXPLICIT",
+        "TRANSPARENT_INFERENCE",
+        "SOURCE_UNDERDETERMINED",
+        "SOURCE_CONFLICT",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "implementation_status": {
+      "enum": [
+        "NOT_SPECIFIED",
+        "SPECIFIED",
+        "PARTIALLY_IMPLEMENTED",
+        "IMPLEMENTED",
+        "DEPRECATED"
+      ]
+    },
+    "internal_fidelity": {
+      "enum": [
+        "UNTESTED",
+        "CONTRACT_PASS",
+        "CASE_RECONSTRUCTION_PASS",
+        "BENCHMARKED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "empirical_status": {
+      "enum": [
+        "UNTESTED",
+        "RETROSPECTIVE",
+        "PROSPECTIVE",
+        "REPLICATED",
+        "NULL_RESULT",
+        "INCONCLUSIVE",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "causal_status": {
+      "enum": [
+        "NONE",
+        "ASSOCIATIONAL",
+        "PARTIALLY_IDENTIFIED",
+        "IDENTIFIED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "maturity_note": {
+      "type": "string"
+    },
+    "wording_ceiling": {
+      "type": "string"
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "url",
+          "authority_status"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "authority_status": {
+            "enum": [
+              "ACCEPTED_MAIN",
+              "MERGED_PR",
+              "OPEN_ISSUE",
+              "UNMERGED_PR",
+              "CLOSED_UNMERGED_PR",
+              "CHAT_CONTEXT",
+              "DERIVED_SYNTHESIS"
+            ]
+          },
+          "repository_path": {
+            "type": "string"
+          },
+          "blob_sha": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "superseded_by": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
