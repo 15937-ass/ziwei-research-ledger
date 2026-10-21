@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CLAIM",
+  "claim_id": "CL-010",
+  "title": "Product Knowledge lock pins an explicit KIB version without auto-refresh",
+  "claim": "The current accepted Product Knowledge lock records KIB-PRODUCT-20261021-V0_3 as ACTIVE, pins artifact and semantic digests and source commit, disables auto-refresh, and names KIB v0.2 as the rollback target.",
+  "claim_domain": "GOVERNANCE",
+  "evidence_basis": "PROJECT_ARTIFACT",
+  "status": "ACTIVE",
+  "source_status": "EXPLICIT",
+  "implementation_status": "IMPLEMENTED",
+  "internal_fidelity": "UNTESTED",
+  "empirical_status": "NOT_APPLICABLE",
+  "causal_status": "NOT_APPLICABLE",
+  "maturity_note": "This claim is limited to the fields in the active lock file. The separate Career Response v0.16 promotion acceptance note still says validation pending, so the lock state must not be used to infer that every downstream component has completed validation.",
+  "wording_ceiling": "Say 'the lock declares KIB v0.3 active with pinned digests and no auto-refresh'; do not infer complete downstream validation from the lock alone.",
+  "evidence_refs": [
+    {
+      "label": "Active Product Knowledge lock v0.3",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_KNOWLEDGE.lock.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_KNOWLEDGE.lock.json",
+      "blob_sha": "39985e1be3d974b414e683925f4a135c0dc69e91"
+    },
+    {
+      "label": "Career Response v0.16 promotion acceptance note",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_KNOWLEDGE_PROMOTION_CAREER_RESPONSE_V0_16_ACCEPTANCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_KNOWLEDGE_PROMOTION_CAREER_RESPONSE_V0_16_ACCEPTANCE.md",
+      "blob_sha": "6028e669d8d0e0dc2fc4d66f5d8fdb459d45bab4",
+      "note": "This file still labels validation pending; the active lock separately records KIB v0.3 as active. Preserve this status discrepancy rather than infer that every downstream validation is complete."
+    },
+    {
+      "label": "Response Semantics adapter readiness v0.3",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/RESPONSE_SEMANTICS_ADAPTER_READINESS_v0.3.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/RESPONSE_SEMANTICS_ADAPTER_READINESS_v0.3.json",
+      "blob_sha": "a537ced6040dc2116cfc8ef274a0cc4b0292dba5"
+    }
+  ],
+  "limitations": [
+    "The active lock and older acceptance note expose a status discrepancy requiring future reconciliation.",
+    "This is a version-governance claim, not evidence of predictive performance."
+  ],
+  "last_updated": "2026-10-22",
+  "supersedes": [],
+  "superseded_by": []
+}
