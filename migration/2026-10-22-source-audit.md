@@ -57,3 +57,17 @@ Migration decision:
 ## 5. No cross-lane mutation
 
 This work reads main-repository evidence only. It does not modify Product or Knowledge paths, change canonical rules, add a fourth authoritative lane, create a required check, or add/invoke GitHub Actions.
+
+
+## 6. Final checkpoint catch-up during bootstrap
+
+After the curated seed was written, main advanced by exactly one commit:
+
+- Previous seed source SHA: `f6944c896efd8f215d4e7d9d89f9fa4db84759f6`
+- Newly observed main SHA: `11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86`
+- Compare result: one commit ahead, zero behind.
+- Changed files: P10 Property direct-transform remainder audit/map, P10 state checkpoint, targeted test and execution evidence.
+
+This commit was inspected and classified as **R1 cumulative Knowledge progress**, not a distinct R2/R3/R4 research event. The checkpoint in RESEARCH_STATE.yaml therefore advances to the new SHA so it will not be replayed indefinitely. This is not a complete historical replay: `history_replay_complete` remains false, and earlier unseeded history remains outside this curated bootstrap.
+
+The new commit is a Knowledge-lane artifact. This sidecar records only the replay/checkpoint decision; it does not modify the source Knowledge files or promote their semantics.
