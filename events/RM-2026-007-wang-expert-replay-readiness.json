@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "record_type": "RESEARCH_EVENT",
+  "id": "RM-2026-007",
+  "title": "Wang Tingzhi 24-case corpus is replay-ready in part, but full expert replay remains blocked",
+  "significance": "R2",
+  "event_type": "METHOD",
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "status": "ACTIVE",
+  "source_repository": {
+    "name": "15937-ass/ziwei-state-space",
+    "ref": "main",
+    "commit_sha": "11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86"
+  },
+  "research_question": "What can the Wang Tingzhi case corpus support today, and what is still required before it can test expert-method fidelity?",
+  "before_state": "A source-demonstrated expert case could be mistaken for a complete executable reasoning trace or for empirical predictive evidence.",
+  "result": "The accepted corpus inventory contains 24 source cases with blind-safe LOCO splits. The current readiness v0.2 reports retrieval_ready=24, action_selection_ready=24 and materialized target-palace evidence=24, but full_expert_replay_ready=0 and full_chart_blocked=24. The stated blockers are FULL_CHART_NOT_MATERIALIZED and NO_EXECUTABLE_PATTERN_FOR_CASE_TARGET_SCOPE.",
+  "key_insights": [
+    "Source case inventory, target-palace materialization, retrieval readiness, action-selection readiness, full expert replay, method fidelity and predictive validity are separate maturity stages.",
+    "The blind evidence layer intentionally materializes only source-visible target-palace major-star facts; it does not reconstruct all 24 full charts.",
+    "Source subject names, expert prose, conclusions, outcomes and external biography are excluded from the blind view to reduce benchmark leakage.",
+    "The live Product state names WANG_METHOD_SCOPE_AND_FULL_CHART_REVIEW as the next work unit; the Sidecar does not execute that Product work."
+  ],
+  "negative_findings": [
+    "Full expert replay readiness is 0/24 in the cited readiness record.",
+    "The corpus does not yet provide a method-fidelity score or predictive-validity result."
+  ],
+  "unexpected_findings": [],
+  "claim_effects": {
+    "supported": [
+      "CL-008"
+    ],
+    "weakened": [],
+    "superseded": [],
+    "opened": [
+      "CL-008"
+    ]
+  },
+  "boundaries": {
+    "source_status": "Source-backed corpus acceptance and readiness counters are explicit in accepted main artifacts.",
+    "implementation_status": "24 cases and target-palace blind evidence are materialized; full charts and executable target-scope patterns remain blocked.",
+    "internal_fidelity": "Readiness only; not an expert-replay fidelity score.",
+    "empirical_status": "No prospective or replicated predictive evidence.",
+    "causal_status": "No causal claim."
+  },
+  "paper_targets": [],
+  "artifacts": [
+    {
+      "label": "Wang Tingzhi 24-case corpus acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_EXPERT_CASE_CORPUS_ACCEPTANCE_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_EXPERT_CASE_CORPUS_ACCEPTANCE_v0.1.md",
+      "blob_sha": "7145a311fcd3eb78e9c00f7b63b81b2c602a3839"
+    },
+    {
+      "label": "Wang blind-evidence materialization acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_BLIND_EVIDENCE_MATERIALIZATION_V0_1_ACCEPTANCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_BLIND_EVIDENCE_MATERIALIZATION_V0_1_ACCEPTANCE.md",
+      "blob_sha": "063e92a84beae349849ae5b139b387a528ee1dbd"
+    },
+    {
+      "label": "Wang method-policy readiness v0.2",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_METHOD_POLICY_READINESS_v0.2.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_METHOD_POLICY_READINESS_v0.2.json",
+      "blob_sha": "375d438346b9dd696b336a39311b60bd5568d2fb"
+    },
+    {
+      "label": "Product lane state cache",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_STATE.yaml",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_STATE.yaml",
+      "blob_sha": "6d9d367f00b159fa8e5006f564b7ff4640c0ece6",
+      "note": "State cache itself says it is as of an earlier Product commit; live issues and accepted main artifacts remain authoritative."
+    },
+    {
+      "label": "Product future workplan",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "blob_sha": "302cd22721f6a1721d078450cea7168af0e0b856"
+    }
+  ],
+  "authority_notes": "Do not describe the 24-case corpus as an executed blind benchmark. Product state is a recovery cache with its own as-of commit; current live Issues/PRs remain execution truth.",
+  "supersedes": [],
+  "superseded_by": []
+}
