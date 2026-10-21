@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CLAIM",
+  "claim_id": "CL-005",
+  "title": "Research Memory Sidecar is designed to be non-authoritative and non-blocking",
+  "claim": "The approved-in-chat Sidecar design intends to preserve research memory without changing canonical Knowledge or Product runtime and without blocking Product/Knowledge execution; implementation is not yet accepted as complete.",
+  "claim_domain": "GOVERNANCE",
+  "evidence_basis": "MIXED",
+  "status": "PROVISIONAL",
+  "source_status": "EXPLICIT",
+  "implementation_status": "SPECIFIED",
+  "internal_fidelity": "UNTESTED",
+  "empirical_status": "NOT_APPLICABLE",
+  "causal_status": "NOT_APPLICABLE",
+  "maturity_note": "Issue #513 records the approved-in-chat design and non-interference contract. PR #562 remains open and unmerged; D-021 is not in current main.",
+  "wording_ceiling": "Say 'design approved in chat and implementation in progress'; do not say the full Sidecar architecture is already accepted on main or automatically ingests repository events.",
+  "evidence_refs": [
+    {
+      "label": "Issue #513 — approved-in-chat design proposal, still open",
+      "url": "https://github.com/15937-ass/ziwei-state-space/issues/513",
+      "authority_status": "OPEN_ISSUE",
+      "note": "Records design intent and non-interference boundaries; not an implementation merge."
+    },
+    {
+      "label": "PR #562 — refreshed Sidecar proposal and archaeology seed, unmerged",
+      "url": "https://github.com/15937-ass/ziwei-state-space/pull/562",
+      "authority_status": "UNMERGED_PR",
+      "note": "Open and mergeable=false at audit time; its proposed D-021 is not accepted main truth."
+    },
+    {
+      "label": "Accepted chat theory/design/philosophy archive",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "blob_sha": "b2bc548831da43ccfe2575764a0bed200ca2d3b8"
+    }
+  ],
+  "limitations": [
+    "The bootstrap PR must be merged before its files become accepted sidecar main state.",
+    "No scheduled ingestion or automatic generator is included in v1.",
+    "Main-repository PR #562 remains a separate review item."
+  ],
+  "last_updated": "2026-10-22",
+  "supersedes": [],
+  "superseded_by": []
+}
