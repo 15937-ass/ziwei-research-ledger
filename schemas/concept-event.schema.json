@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Concept Event",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "record_type",
+    "id",
+    "title",
+    "captured_at",
+    "concept_statement",
+    "formalization",
+    "motivation",
+    "epistemic_status",
+    "empirical_support",
+    "approval_status",
+    "canonical_zhongzhou_rule",
+    "implications",
+    "boundaries",
+    "source_refs",
+    "linked_records",
+    "supersedes",
+    "superseded_by"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_type": {
+      "const": "CONCEPT_EVENT"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^CE-\\d{4}-\\d{3}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "captured_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "concept_statement": {
+      "type": "string"
+    },
+    "formalization": {
+      "type": "string"
+    },
+    "motivation": {
+      "type": "string"
+    },
+    "epistemic_status": {
+      "enum": [
+        "PROJECT_PHILOSOPHY",
+        "RESEARCH_HYPOTHESIS",
+        "SOURCE_UNDERDETERMINED",
+        "PROVISIONAL",
+        "SUPERSEDED"
+      ]
+    },
+    "empirical_support": {
+      "enum": [
+        "NONE",
+        "INTERNAL_ONLY",
+        "RETROSPECTIVE",
+        "PROSPECTIVE",
+        "REPLICATED"
+      ]
+    },
+    "approval_status": {
+      "enum": [
+        "PI_APPROVED_DESIGN",
+        "APPROVED_RATIONALE",
+        "NOT_APPROVED",
+        "OPEN"
+      ]
+    },
+    "canonical_zhongzhou_rule": {
+      "type": "boolean"
+    },
+    "implications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "boundaries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "url",
+          "authority_status"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "authority_status": {
+            "enum": [
+              "ACCEPTED_MAIN",
+              "MERGED_PR",
+              "OPEN_ISSUE",
+              "UNMERGED_PR",
+              "CLOSED_UNMERGED_PR",
+              "CHAT_CONTEXT",
+              "DERIVED_SYNTHESIS"
+            ]
+          },
+          "repository_path": {
+            "type": "string"
+          },
+          "blob_sha": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "linked_records": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "superseded_by": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
