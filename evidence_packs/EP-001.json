@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "record_type": "EVIDENCE_PACK",
+  "id": "EP-001",
+  "title": "Paper 1 scope and epistemic-boundary evidence pack",
+  "generated_at": "2026-10-22T22:00:00+08:00",
+  "generation_mode": "CURATED_V1",
+  "source_main_sha": "f6944c896efd8f215d4e7d9d89f9fa4db84759f6",
+  "claim_ids": [
+    "CL-001",
+    "CL-002",
+    "CL-003"
+  ],
+  "supporting_events": [
+    "RM-2026-001",
+    "RM-2026-002"
+  ],
+  "accepted_artifacts": [
+    {
+      "label": "Project Constitution",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/PROJECT_CONSTITUTION.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "PROJECT_CONSTITUTION.md",
+      "blob_sha": "eadad9e01cd85fbf1bcee48240b7e688ffe7012c"
+    },
+    {
+      "label": "Decision Log",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/DECISION_LOG.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "DECISION_LOG.md",
+      "blob_sha": "183423d9ec507625dc7eb344573ccbdfd75f0f9d"
+    },
+    {
+      "label": "Paper 1 outline",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/paper/outline.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "paper/outline.md",
+      "blob_sha": "ece8b30328fe1e7b8a9c8ba37c13f516b7e325e7"
+    },
+    {
+      "label": "Manuscript v0.1 snapshot",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/paper/manuscript_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "paper/manuscript_v0.1.md",
+      "blob_sha": "281127cbaea3b84d23021092089cddf25eae1369",
+      "note": "Working manuscript only; not independent evidence of its own quantitative statements."
+    },
+    {
+      "label": "Accepted chat theory/design/philosophy archive",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "blob_sha": "b2bc548831da43ccfe2575764a0bed200ca2d3b8"
+    }
+  ],
+  "conflicts_and_limitations": [
+    "The manuscript is a working snapshot and is not independent evidence for its own quantitative statements.",
+    "The ontology's specific candidate dimensions and interaction functions remain revisable where marked provisional.",
+    "The cited artifacts establish intended scope and method boundaries, not full source-corpus closure.",
+    "No held-out real-world prediction benchmark or causal identification result is included in this pack."
+  ],
+  "wording_ceiling": "Paper 1 formalizes a bounded Zhongzhou-school source corpus into a traceable and auditable latent-state representation and evaluates internal formalization properties. It does not establish real-world predictive accuracy, causal validity, or a physical mechanism for qi.",
+  "forbidden_inferences": [
+    "Internal rule fidelity proves real-world predictive accuracy.",
+    "The operational latent-state representation proves qi is a physical energy.",
+    "The existence of a draft manuscript proves all reported counts and metrics are independently validated.",
+    "The N/E/S/A/C trajectory model is a canonical Zhongzhou rule or an empirically validated law.",
+    "Textbook case reconstruction is equivalent to blind prospective prediction."
+  ],
+  "status": "DRAFT"
+}
