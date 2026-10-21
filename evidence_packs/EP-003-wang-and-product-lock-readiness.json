@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "record_type": "EVIDENCE_PACK",
+  "id": "EP-003",
+  "title": "Wang expert replay and Product Knowledge lock maturity boundaries",
+  "generated_at": "2026-10-22T22:00:00+08:00",
+  "generation_mode": "CURATED_V1",
+  "source_main_sha": "11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86",
+  "claim_ids": [
+    "CL-007",
+    "CL-008",
+    "CL-010"
+  ],
+  "supporting_events": [
+    "RM-2026-006",
+    "RM-2026-007"
+  ],
+  "accepted_artifacts": [
+    {
+      "label": "Active Product Knowledge lock v0.3",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_KNOWLEDGE.lock.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_KNOWLEDGE.lock.json",
+      "blob_sha": "39985e1be3d974b414e683925f4a135c0dc69e91"
+    },
+    {
+      "label": "Response Semantics Product Adapter v0.2",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/RESPONSE_SEMANTICS_ADAPTER_V0_2.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/RESPONSE_SEMANTICS_ADAPTER_V0_2.md",
+      "blob_sha": "b354f256f084cc5353be8827948fae3f246473fe"
+    },
+    {
+      "label": "Response Semantics adapter readiness v0.3",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/RESPONSE_SEMANTICS_ADAPTER_READINESS_v0.3.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/RESPONSE_SEMANTICS_ADAPTER_READINESS_v0.3.json",
+      "blob_sha": "a537ced6040dc2116cfc8ef274a0cc4b0292dba5"
+    },
+    {
+      "label": "Career Response v0.16 promotion acceptance note",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_KNOWLEDGE_PROMOTION_CAREER_RESPONSE_V0_16_ACCEPTANCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_KNOWLEDGE_PROMOTION_CAREER_RESPONSE_V0_16_ACCEPTANCE.md",
+      "blob_sha": "6028e669d8d0e0dc2fc4d66f5d8fdb459d45bab4",
+      "note": "This file still labels validation pending; the active lock separately records KIB v0.3 as active. Preserve this status discrepancy rather than infer that every downstream validation is complete."
+    },
+    {
+      "label": "Wang Tingzhi 24-case corpus acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_EXPERT_CASE_CORPUS_ACCEPTANCE_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_EXPERT_CASE_CORPUS_ACCEPTANCE_v0.1.md",
+      "blob_sha": "7145a311fcd3eb78e9c00f7b63b81b2c602a3839"
+    },
+    {
+      "label": "Wang blind-evidence materialization acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_BLIND_EVIDENCE_MATERIALIZATION_V0_1_ACCEPTANCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_BLIND_EVIDENCE_MATERIALIZATION_V0_1_ACCEPTANCE.md",
+      "blob_sha": "063e92a84beae349849ae5b139b387a528ee1dbd"
+    },
+    {
+      "label": "Wang method-policy readiness v0.2",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_METHOD_POLICY_READINESS_v0.2.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_METHOD_POLICY_READINESS_v0.2.json",
+      "blob_sha": "375d438346b9dd696b336a39311b60bd5568d2fb"
+    },
+    {
+      "label": "Product lane state cache",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_STATE.yaml",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_STATE.yaml",
+      "blob_sha": "6d9d367f00b159fa8e5006f564b7ff4640c0ece6",
+      "note": "State cache itself says it is as of an earlier Product commit; live issues and accepted main artifacts remain authoritative."
+    },
+    {
+      "label": "Product future workplan",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "blob_sha": "302cd22721f6a1721d078450cea7168af0e0b856"
+    }
+  ],
+  "conflicts_and_limitations": [
+    "The active Product lock declares KIB v0.3 active, while the separate Career Response v0.16 acceptance note still labels validation pending; this status discrepancy is preserved.",
+    "The Wang readiness file reports 24/24 retrieval-ready and action-selection-ready folds, but 0/24 full expert replay-ready and 24/24 full-chart blockers.",
+    "The Wang corpus acceptance note does not claim machine blind inference, case-based retrieval ranking, method policy, method-fidelity score, response compiler, empirical probability or predictive validity.",
+    "Product state is a state cache with its own as-of commit; live Issues/PRs remain execution truth."
+  ],
+  "wording_ceiling": "The Product Knowledge lock is versioned and fail-closed Response Semantics is explicit. The Wang corpus has source-backed partial readiness, not completed expert replay or predictive validation.",
+  "forbidden_inferences": [
+    "Active KIB lock proves every downstream component has passed current validation.",
+    "Semantic-only ResponseSemanticsRecord authorizes runtime effects.",
+    "24/24 target-palace materializations equal 24 complete charts.",
+    "Retrieval/action-selection readiness equals expert-method fidelity.",
+    "A historical casebook reconstruction establishes prospective predictive validity."
+  ],
+  "status": "REVIEWED"
+}
