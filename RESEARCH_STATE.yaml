@@ -8,7 +8,9 @@ last_seen_main_checked_at: "2026-10-22T22:00:00+08:00"
 checkpoint_mode: "CURATED_BOOTSTRAP_PLUS_REVIEWED_R1_CATCHUP"
 history_replay_complete: false
 research_schema_version: "1.0"
-migration_status: "CURATED_BOOTSTRAP_CANDIDATE"
+migration_status: "CURATED_BOOTSTRAP_COMPLETE_WITH_LIMITATIONS"
+bootstrap_pr: 2
+bootstrap_merge_sha: "a3c50056f5c239823abe71c9f13df459d74ad12f"
 seeded_events:
   - "RM-2026-001"
   - "RM-2026-002"
@@ -39,4 +41,5 @@ notes:
   - "PR #562 is open and unmerged; its proposed D-021 and archaeology file are not accepted main truth."
   - "The main-repository archive has an outdated pointer to PR #514; PR #514 is closed unmerged and explicitly superseded by PR #562."
   - "Main advanced from the seed SHA by one reviewed R1 commit during bootstrap; checkpoint advanced only after classifying it."
-  - "No Product/Knowledge dependency or GitHub Actions workflow is introduced."
+  - "RSM-1 bootstrap was accepted into Sidecar main by PR #2 at the recorded merge SHA."
+  - "Capture remains manual/on-demand; no automated ingestion or GitHub Actions workflow is introduced."
