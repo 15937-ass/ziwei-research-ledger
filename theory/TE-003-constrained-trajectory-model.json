@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "record_type": "THEORY_EVOLUTION",
+  "theory_id": "TE-003",
+  "title": "From fixed event script to constrained trajectory model",
+  "status": "PROVISIONAL_RESEARCH_NOTE",
+  "epistemic_class": "RESEARCH_HYPOTHESIS",
+  "old_model": "A birth chart maps directly to a fixed sequence of future events; temporal periods are treated as event guarantees.",
+  "observed_limitations": [
+    "This collapses time environment into outcome.",
+    "It cannot distinguish acquired state, personal action and external context.",
+    "It risks explaining every post-hoc outcome without a preregistered target or opportunity to fail."
+  ],
+  "current_model": "Represent the natal chart as one structural prior within a broader trajectory model: S_(t+1) = F(S_t, N, E_t, A_t, C_t; θ). N is natal structure, E_t temporal environment, S_t acquired state, A_t action and C_t external context/disturbance. The equation is a research representation, not a source-given law.",
+  "rationale": "The model creates separate slots for structure, environment, history, action and context, making alternative trajectories and empirical tests conceptually expressible.",
+  "consequences": [
+    "Temporal environment is not an event guarantee.",
+    "Action and external context are distinct.",
+    "Any predictive value must be tested against context-only and other baselines.",
+    "Causal recommendations require separate causal identification."
+  ],
+  "what_remains_valid": [
+    "Traditional source rules can still constrain the candidate interpretation space.",
+    "The model is useful as a design hypothesis even before empirical validity is established."
+  ],
+  "claim_effects": [
+    "Records the current status and wording ceiling of CL-004."
+  ],
+  "provenance": [
+    {
+      "label": "Accepted chat theory/design/philosophy archive",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "blob_sha": "b2bc548831da43ccfe2575764a0bed200ca2d3b8"
+    },
+    {
+      "label": "Product future workplan",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "blob_sha": "302cd22721f6a1721d078450cea7168af0e0b856"
+    }
+  ],
+  "boundaries": [
+    "Research hypothesis / product modeling framework only.",
+    "Not a canonical Zhongzhou rule.",
+    "Empirical support is currently NONE in the cited artifacts."
+  ],
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "supersedes": [],
+  "superseded_by": []
+}

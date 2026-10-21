@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CLAIM",
+  "claim_id": "CL-004",
+  "title": "N/E/S/A/C is a research trajectory model, not validated doctrine",
+  "claim": "The N/E/S/A/C framing represents a project-level hypothesis in which natal structure, temporal environment, acquired state, action and external context jointly shape possible trajectories; it is not a canonical Zhongzhou rule or an empirically validated predictor.",
+  "claim_domain": "RESEARCH_HYPOTHESIS",
+  "evidence_basis": "RESEARCH_HYPOTHESIS",
+  "status": "PROVISIONAL",
+  "source_status": "NOT_APPLICABLE",
+  "implementation_status": "SPECIFIED",
+  "internal_fidelity": "UNTESTED",
+  "empirical_status": "UNTESTED",
+  "causal_status": "NONE",
+  "maturity_note": "Recorded as project rationale in the accepted historical archive and reflected in the Product future workplan. The full model's empirical validity is not established.",
+  "wording_ceiling": "Describe it as a research/product modeling hypothesis or conditional scenario framework, not a discovered law of destiny or causal intervention model.",
+  "evidence_refs": [
+    {
+      "label": "Accepted chat theory/design/philosophy archive",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "blob_sha": "b2bc548831da43ccfe2575764a0bed200ca2d3b8"
+    },
+    {
+      "label": "Product future workplan",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "blob_sha": "302cd22721f6a1721d078450cea7168af0e0b856"
+    }
+  ],
+  "limitations": [
+    "Not a source-authored Zhongzhou doctrine.",
+    "No empirical predictive increment is established by the cited artifacts.",
+    "Action effects must not be described causally without identification."
+  ],
+  "last_updated": "2026-10-22",
+  "supersedes": [],
+  "superseded_by": []
+}

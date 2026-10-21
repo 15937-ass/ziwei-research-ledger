@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence Pack",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "record_type",
+    "id",
+    "title",
+    "generated_at",
+    "generation_mode",
+    "source_main_sha",
+    "claim_ids",
+    "supporting_events",
+    "accepted_artifacts",
+    "conflicts_and_limitations",
+    "wording_ceiling",
+    "forbidden_inferences",
+    "status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_type": {
+      "const": "EVIDENCE_PACK"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^EP-\\d{3}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "generation_mode": {
+      "enum": [
+        "CURATED_V1",
+        "PROGRAMMATIC"
+      ]
+    },
+    "source_main_sha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "supporting_events": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "accepted_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "url",
+          "authority_status"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "authority_status": {
+            "enum": [
+              "ACCEPTED_MAIN",
+              "MERGED_PR",
+              "OPEN_ISSUE",
+              "UNMERGED_PR",
+              "CLOSED_UNMERGED_PR",
+              "CHAT_CONTEXT",
+              "DERIVED_SYNTHESIS"
+            ]
+          },
+          "repository_path": {
+            "type": "string"
+          },
+          "blob_sha": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "conflicts_and_limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "wording_ceiling": {
+      "type": "string"
+    },
+    "forbidden_inferences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "DRAFT",
+        "REVIEWED",
+        "SUPERSEDED"
+      ]
+    }
+  }
+}

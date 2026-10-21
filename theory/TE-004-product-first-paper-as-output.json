@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "record_type": "THEORY_EVOLUTION",
+  "theory_id": "TE-004",
+  "title": "Product-first: manuscripts are outputs, not the project's memory",
+  "status": "APPROVED_RATIONALE",
+  "epistemic_class": "PROJECT_METHOD",
+  "old_model": "Organize the project primarily around a paper draft and retrofit the implementation to match manuscript structure.",
+  "observed_limitations": [
+    "A manuscript becomes stale as Product and Knowledge evolve.",
+    "A polished draft can hide missing source provenance, unvalidated claims or absent negative findings.",
+    "The project loses rationale that has not yet been written into the manuscript."
+  ],
+  "current_model": "Prioritize reliable and auditable Product/Knowledge capability; preserve research events, claims, theory evolution and evidence mappings separately; synthesize paper sections from accepted evidence packs.",
+  "rationale": "Research claims should emerge from what the project can actually demonstrate, while a manuscript remains a versioned communication artifact.",
+  "consequences": [
+    "The current manuscript is classified as a draft snapshot.",
+    "Claim maturity is tracked independently from prose maturity.",
+    "Evidence packs must include limits and wording ceilings."
+  ],
+  "what_remains_valid": [
+    "The existing Paper 1 outline and manuscript remain useful working artifacts.",
+    "The first paper remains bounded to formalization and internal validation."
+  ],
+  "claim_effects": [
+    "Supports CL-001 and CL-003."
+  ],
+  "provenance": [
+    {
+      "label": "Accepted chat theory/design/philosophy archive",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "blob_sha": "b2bc548831da43ccfe2575764a0bed200ca2d3b8"
+    },
+    {
+      "label": "Decision Log",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/DECISION_LOG.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "DECISION_LOG.md",
+      "blob_sha": "183423d9ec507625dc7eb344573ccbdfd75f0f9d"
+    },
+    {
+      "label": "Product future workplan",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "blob_sha": "302cd22721f6a1721d078450cea7168af0e0b856"
+    }
+  ],
+  "boundaries": [
+    "This is project strategy, not a scientific finding about predictive accuracy.",
+    "Sidecar records do not replace main repository truth."
+  ],
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "supersedes": [],
+  "superseded_by": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "record_type": "THEORY_EVOLUTION",
+  "theory_id": "TE-002",
+  "title": "From flat star-to-event labels to 气→象→事 and layered representation",
+  "status": "CANONICAL_METHOD_BOUNDARY",
+  "epistemic_class": "RESEARCH_NORMALIZATION",
+  "old_model": "Encode stars as flat labels such as leadership, wealth or change, then aggregate favorable/unfavorable signs.",
+  "observed_limitations": [
+    "The flat labels collapse star core, star-system interaction, palace context and observed events.",
+    "A single valence score cannot represent state change separately from contextual suitability.",
+    "Combinatorial cases cannot be enumerated without explosion."
+  ],
+  "current_model": "Use 气 as an operational latent-state representation, 象 as contextual manifestation family, and 事 as observable event candidate; separate L0-L4 layers, single-star base states, nonlinear star-system interactions, modifiers, palace projections and temporal inputs.",
+  "rationale": "Preserve source conditions and relational structure while making the representation computable and auditable.",
+  "consequences": [
+    "Source wording and research normalization stay distinct.",
+    "Latent-state changes and contextual valence stay distinct.",
+    "The sixty star systems can express interaction deltas and context gates.",
+    "The ontology remains revisable when source evidence does not support an existing dimension."
+  ],
+  "what_remains_valid": [
+    "The model still depends on source-grounded extraction and explicit uncertainty.",
+    "The research representation does not assert a physical qi mechanism."
+  ],
+  "claim_effects": [
+    "Supports CL-001 and CL-002; reinforces CL-003."
+  ],
+  "provenance": [
+    {
+      "label": "Project Constitution",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/PROJECT_CONSTITUTION.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "PROJECT_CONSTITUTION.md",
+      "blob_sha": "eadad9e01cd85fbf1bcee48240b7e688ffe7012c"
+    },
+    {
+      "label": "Decision Log",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/DECISION_LOG.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "DECISION_LOG.md",
+      "blob_sha": "183423d9ec507625dc7eb344573ccbdfd75f0f9d"
+    },
+    {
+      "label": "Accepted chat theory/design/philosophy archive",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "blob_sha": "b2bc548831da43ccfe2575764a0bed200ca2d3b8"
+    }
+  ],
+  "boundaries": [
+    "气→象→事 is a research knowledge-representation framework, not a verbatim classical-source statement.",
+    "Candidate dimensions and interaction functions remain provisional where not frozen."
+  ],
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "supersedes": [],
+  "superseded_by": []
+}

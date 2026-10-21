@@ -1,0 +1,246 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Event",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "record_type",
+    "id",
+    "title",
+    "significance",
+    "event_type",
+    "captured_at",
+    "status",
+    "source_repository",
+    "research_question",
+    "before_state",
+    "result",
+    "key_insights",
+    "negative_findings",
+    "unexpected_findings",
+    "claim_effects",
+    "boundaries",
+    "paper_targets",
+    "artifacts",
+    "authority_notes",
+    "supersedes",
+    "superseded_by"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_type": {
+      "const": "RESEARCH_EVENT"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^RM-\\d{4}-\\d{3}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "significance": {
+      "enum": [
+        "R2",
+        "R3",
+        "R4"
+      ]
+    },
+    "event_type": {
+      "enum": [
+        "KNOWLEDGE",
+        "PRODUCT",
+        "METHOD",
+        "THEORY",
+        "BENCHMARK",
+        "EMPIRICAL",
+        "GOVERNANCE"
+      ]
+    },
+    "captured_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "enum": [
+        "ACTIVE",
+        "HISTORICAL",
+        "SUPERSEDED"
+      ]
+    },
+    "source_repository": {
+      "type": "object",
+      "required": [
+        "name",
+        "ref",
+        "commit_sha"
+      ],
+      "properties": {
+        "name": {
+          "const": "15937-ass/ziwei-state-space"
+        },
+        "ref": {
+          "type": "string"
+        },
+        "commit_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        }
+      }
+    },
+    "research_question": {
+      "type": "string"
+    },
+    "before_state": {
+      "type": "string"
+    },
+    "result": {
+      "type": "string"
+    },
+    "key_insights": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "negative_findings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unexpected_findings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claim_effects": {
+      "type": "object",
+      "required": [
+        "supported",
+        "weakened",
+        "superseded",
+        "opened"
+      ],
+      "properties": {
+        "supported": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "weakened": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "superseded": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "opened": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "boundaries": {
+      "type": "object",
+      "required": [
+        "source_status",
+        "implementation_status",
+        "internal_fidelity",
+        "empirical_status",
+        "causal_status"
+      ],
+      "properties": {
+        "source_status": {
+          "type": "string"
+        },
+        "implementation_status": {
+          "type": "string"
+        },
+        "internal_fidelity": {
+          "type": "string"
+        },
+        "empirical_status": {
+          "type": "string"
+        },
+        "causal_status": {
+          "type": "string"
+        }
+      }
+    },
+    "paper_targets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "url",
+          "authority_status"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "authority_status": {
+            "enum": [
+              "ACCEPTED_MAIN",
+              "MERGED_PR",
+              "OPEN_ISSUE",
+              "UNMERGED_PR",
+              "CLOSED_UNMERGED_PR",
+              "CHAT_CONTEXT",
+              "DERIVED_SYNTHESIS"
+            ]
+          },
+          "repository_path": {
+            "type": "string"
+          },
+          "blob_sha": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "authority_notes": {
+      "type": "string"
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "superseded_by": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "record_type": "THEORY_EVOLUTION",
+  "theory_id": "TE-001",
+  "title": "Deterministic computation separated from LLM verbalization",
+  "status": "CANONICAL_METHOD_BOUNDARY",
+  "epistemic_class": "PROJECT_METHOD",
+  "old_model": "A single LLM prompt would calculate the chart, choose rules and produce a reading in one opaque step.",
+  "observed_limitations": [
+    "Calculation errors and interpretation disagreements would be difficult to distinguish.",
+    "The same input could produce different underlying reasoning depending on model wording.",
+    "Source provenance and deterministic regression would be weak."
+  ],
+  "current_model": "Deterministic programs own calculable chart facts and canonical rule execution; symbolic/graph procedures handle explicit relations; LLMs assist with explanation and verbalization but do not own rule truth or probability truth.",
+  "rationale": "Separate deterministic facts, source-grounded inference and natural-language presentation so each can be audited with the appropriate method.",
+  "consequences": [
+    "Chart and canonical facts need deterministic tests.",
+    "LLM-generated additions require provenance and unsupported additions must be blocked.",
+    "A fluent explanation is not evidence that a rule is canonical."
+  ],
+  "what_remains_valid": [
+    "LLM may still assist with source extraction, candidate generation, explanation and language organization under review.",
+    "Human Gate and source-span verification remain necessary for semantic promotions."
+  ],
+  "claim_effects": [
+    "Supports CL-001 and CL-003."
+  ],
+  "provenance": [
+    {
+      "label": "Decision Log",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/DECISION_LOG.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "DECISION_LOG.md",
+      "blob_sha": "183423d9ec507625dc7eb344573ccbdfd75f0f9d"
+    },
+    {
+      "label": "Accepted chat theory/design/philosophy archive",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "blob_sha": "b2bc548831da43ccfe2575764a0bed200ca2d3b8"
+    }
+  ],
+  "boundaries": [
+    "This is a project architecture boundary, not a claim that traditional sources used modern AI terminology.",
+    "This record does not certify every Product runtime path as complete."
+  ],
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "supersedes": [],
+  "superseded_by": []
+}

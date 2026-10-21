@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CONCEPT_EVENT",
+  "id": "CE-2026-001",
+  "title": "命不是固定轨迹：结构约束下的轨迹分叉",
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "concept_statement": "不要把同一命盘理解为一条预写好的固定人生剧本。项目可以研究一种解释框架：先天结构对可能的反应空间施加约束，而现实轨迹还与时间环境、已形成状态、主体行动和外部条件有关。",
+  "formalization": "S_(t+1) = F(S_t, N, E_t, A_t, C_t; θ). This is a research/product modeling hypothesis, not a source-given dynamical law.",
+  "motivation": "The flat chart-to-event mapping risks collapsing environment, state, action and context and makes post-hoc explanations too easy. A trajectory representation keeps these factors conceptually distinct and leaves room for empirical failure.",
+  "epistemic_status": "RESEARCH_HYPOTHESIS",
+  "empirical_support": "NONE",
+  "approval_status": "APPROVED_RATIONALE",
+  "canonical_zhongzhou_rule": false,
+  "implications": [
+    "Keep N, E_t, S_t, A_t and C_t as separate modeling objects.",
+    "Do not turn a temporal configuration into a guaranteed event.",
+    "Do not treat user choice as the same thing as external disturbance.",
+    "Require held-out evaluation before claiming predictive increment."
+  ],
+  "boundaries": [
+    "This is a project research philosophy, not a canonical Zhongzhou doctrine or a quote from Wang Tingzhi.",
+    "The cited project artifacts do not provide empirical validation of the trajectory equation.",
+    "APPROVED_RATIONALE means preserved as project rationale, not a formal source-truth promotion."
+  ],
+  "source_refs": [
+    {
+      "label": "Accepted chat theory/design/philosophy archive",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "blob_sha": "b2bc548831da43ccfe2575764a0bed200ca2d3b8"
+    },
+    {
+      "label": "Product future workplan",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "blob_sha": "302cd22721f6a1721d078450cea7168af0e0b856"
+    }
+  ],
+  "linked_records": [
+    "TE-003",
+    "CL-004"
+  ],
+  "supersedes": [],
+  "superseded_by": []
+}

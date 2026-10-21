@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "record_type": "RESEARCH_EVENT",
+  "id": "RM-2026-004",
+  "title": "Durable theory memory identified as a separate sidecar concern",
+  "significance": "R3",
+  "event_type": "GOVERNANCE",
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "status": "ACTIVE",
+  "source_repository": {
+    "name": "15937-ass/ziwei-state-space",
+    "ref": "main",
+    "commit_sha": "f6944c896efd8f215d4e7d9d89f9fa4db84759f6"
+  },
+  "research_question": "How can major theory and design rationale survive chat cleanup without making chat or a research diary into project execution truth?",
+  "before_state": "Important rationale was distributed across chats and historical summaries; the main repository had a broad accepted theory archive but no independent claim/theory/evidence ledger.",
+  "result": "The accepted main archive preserves a broad historical synthesis. Issue #513 records the PI-approved-in-chat Sidecar design; PR #562 proposes a more explicitly decomposed archaeology archive and D-021 but remains unmerged. The Sidecar is therefore an approved-in-chat design under implementation, not an accepted main-repository decision yet.",
+  "key_insights": [
+    "Research memory must be independent from the execution authority chain.",
+    "The sidecar must be non-authoritative, non-blocking, replayable and append-only for historical records.",
+    "The two chat archives overlap substantially and should be decomposed into linked records rather than copied verbatim.",
+    "The stale PR #514 reference in the accepted archive is recorded here as a pointer correction, not silently rewritten."
+  ],
+  "negative_findings": [
+    "PR #562 cannot be treated as accepted main truth while open and unmerged.",
+    "A curated seed is not equivalent to a complete replay of all historical chats or commits."
+  ],
+  "unexpected_findings": [],
+  "claim_effects": {
+    "supported": [],
+    "weakened": [],
+    "superseded": [],
+    "opened": [
+      "CL-005"
+    ]
+  },
+  "boundaries": {
+    "source_status": "The accepted archive is in main; Issue #513 is open; PR #562 is unmerged and remains review material.",
+    "implementation_status": "Sidecar schema and initial records are being bootstrapped; no automated ingestion is claimed.",
+    "internal_fidelity": "Schema validation is separate from research-content validation.",
+    "empirical_status": "Not applicable to the governance architecture.",
+    "causal_status": "Not applicable."
+  },
+  "paper_targets": [
+    "Project research memory",
+    "Future reproducibility and research-object packaging"
+  ],
+  "artifacts": [
+    {
+      "label": "Accepted chat theory/design/philosophy archive",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "blob_sha": "b2bc548831da43ccfe2575764a0bed200ca2d3b8"
+    },
+    {
+      "label": "Issue #513 — approved-in-chat design proposal, still open",
+      "url": "https://github.com/15937-ass/ziwei-state-space/issues/513",
+      "authority_status": "OPEN_ISSUE",
+      "note": "Records design intent and non-interference boundaries; not an implementation merge."
+    },
+    {
+      "label": "PR #562 — refreshed Sidecar proposal and archaeology seed, unmerged",
+      "url": "https://github.com/15937-ass/ziwei-state-space/pull/562",
+      "authority_status": "UNMERGED_PR",
+      "note": "Open and mergeable=false at audit time; its proposed D-021 is not accepted main truth."
+    },
+    {
+      "label": "PR #514 — closed without merge; superseded by PR #562",
+      "url": "https://github.com/15937-ass/ziwei-state-space/pull/514",
+      "authority_status": "CLOSED_UNMERGED_PR",
+      "note": "Do not treat as the current implementation PR."
+    }
+  ],
+  "authority_notes": "Do not promote D-021 or the PR #562 archaeology file to accepted main truth until the main-repository PR is reviewed and merged. This event does not modify that PR.",
+  "supersedes": [],
+  "superseded_by": []
+}

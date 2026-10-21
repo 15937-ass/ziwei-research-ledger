@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CLAIM",
+  "claim_id": "CL-002",
+  "title": "Qi is an operational latent-state representation in Paper 1",
+  "claim": "For Paper 1, qi is operationally represented as a latent state used to formalize repeated directional and relational properties in the source corpus; this does not assert that qi is an experimentally established physical energy.",
+  "claim_domain": "PROJECT_METHOD",
+  "evidence_basis": "PROJECT_ARTIFACT",
+  "status": "ACTIVE",
+  "source_status": "EXPLICIT",
+  "implementation_status": "SPECIFIED",
+  "internal_fidelity": "NOT_APPLICABLE",
+  "empirical_status": "NOT_APPLICABLE",
+  "causal_status": "NOT_APPLICABLE",
+  "maturity_note": "The operational definition is explicit in PROJECT_CONSTITUTION.md and D-002/D-012. The ontology's specific candidate dimensions remain revisable.",
+  "wording_ceiling": "Use 'operational latent-state representation'; do not describe qi as a proven physical substance or mechanism.",
+  "evidence_refs": [
+    {
+      "label": "Project Constitution",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/PROJECT_CONSTITUTION.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "PROJECT_CONSTITUTION.md",
+      "blob_sha": "eadad9e01cd85fbf1bcee48240b7e688ffe7012c"
+    },
+    {
+      "label": "Decision Log",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/DECISION_LOG.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "DECISION_LOG.md",
+      "blob_sha": "183423d9ec507625dc7eb344573ccbdfd75f0f9d"
+    },
+    {
+      "label": "Accepted chat theory/design/philosophy archive",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "blob_sha": "b2bc548831da43ccfe2575764a0bed200ca2d3b8"
+    }
+  ],
+  "limitations": [
+    "Modern mathematical layer names are research normalization.",
+    "Specific ontology dimensions and interaction functions are not all final."
+  ],
+  "last_updated": "2026-10-22",
+  "supersedes": [],
+  "superseded_by": []
+}

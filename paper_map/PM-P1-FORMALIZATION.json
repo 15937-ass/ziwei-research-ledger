@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "record_type": "PAPER_MAP",
+  "map_id": "PM-P1-FORMALIZATION",
+  "candidate_paper": "Paper 1",
+  "status": "DRAFT_SNAPSHOT",
+  "working_title": {
+    "en": "A Theory-Constrained Latent-State Dynamical Formalization of Zhongzhou Zi Wei Dou Shu",
+    "zh": "中州派紫微斗数的理论约束潜状态形式化：从星曜、六十星系到原局—运限反应"
+  },
+  "paper_snapshot": {
+    "path": "paper/manuscript_v0.1.md",
+    "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/paper/manuscript_v0.1.md",
+    "blob_sha": "281127cbaea3b84d23021092089cddf25eae1369",
+    "version": "v0.1",
+    "role": "HISTORICAL_MANUSCRIPT_SNAPSHOT"
+  },
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "question": "Can the Zhongzhou star/star-system/palace/temporal hierarchy be represented as a layered latent-state model?",
+      "related_claims": [
+        "CL-001",
+        "CL-002"
+      ],
+      "methods": [
+        "Source-grounded atomic-rule schema",
+        "L0-L4 research ontology",
+        "Star core and star-system interaction representation"
+      ],
+      "evaluation": [
+        "Rule coverage and provenance audit",
+        "Schema/semantic consistency",
+        "Contradiction preservation"
+      ],
+      "paper_sections": [
+        "3. Corpus and Knowledge Formalization",
+        "4. Formal Model",
+        "5. Implementation"
+      ],
+      "wording_ceiling": "The current source-bounded model specifies a layered representation; do not claim all source material is closed or that the representation is empirically predictive."
+    },
+    {
+      "id": "RQ2",
+      "question": "Can the Zhongzhou distinction between natal essence and decade/year response be represented without treating temporal periods as guaranteed events?",
+      "related_claims": [
+        "CL-001",
+        "CL-004"
+      ],
+      "methods": [
+        "Separate natal structure and exogenous temporal inputs",
+        "Represent state-dependent reaction and palace projection"
+      ],
+      "evaluation": [
+        "Source support for inputs/outputs",
+        "Internal case reconstruction",
+        "Observation-path and distinguishability audits where supported"
+      ],
+      "paper_sections": [
+        "4. Formal Model",
+        "6. Evaluation",
+        "7. Discussion"
+      ],
+      "wording_ceiling": "The model formalizes a source-constrained reaction structure; it does not establish a complete recursive law or guarantee events."
+    },
+    {
+      "id": "RQ3",
+      "question": "Can symbolic constraints and interaction structure preserve source knowledge without arbitrary continuous weights or simple additive assumptions?",
+      "related_claims": [
+        "CL-001",
+        "CL-002"
+      ],
+      "methods": [
+        "Symbolic parameters and order constraints",
+        "Interaction deltas and context gates",
+        "Separate state change from contextual valence"
+      ],
+      "evaluation": [
+        "Schema audit",
+        "Rule trace consistency",
+        "No unsupported numeric parameters"
+      ],
+      "paper_sections": [
+        "3. Corpus and Knowledge Formalization",
+        "4. Formal Model",
+        "5. Implementation"
+      ],
+      "wording_ceiling": "Describe the formal representation and its constraints; do not present invented weights as empirical estimates."
+    },
+    {
+      "id": "RQ4",
+      "question": "Can the formal system be audited and internally reproduced with traceable evidence?",
+      "related_claims": [
+        "CL-001",
+        "CL-003"
+      ],
+      "methods": [
+        "Source provenance",
+        "Executable rule traces",
+        "Deterministic regression",
+        "Textbook-case internal reconstruction"
+      ],
+      "evaluation": [
+        "Rule coverage",
+        "Annotation agreement",
+        "Contradiction audit",
+        "Semantic round-trip fidelity",
+        "Executable reproducibility"
+      ],
+      "paper_sections": [
+        "5. Implementation",
+        "6. Evaluation",
+        "7. Discussion"
+      ],
+      "wording_ceiling": "Internal fidelity supports faithful formalization only; it does not establish real-world predictive validity."
+    }
+  ],
+  "related_claims": [
+    "CL-001",
+    "CL-002",
+    "CL-003",
+    "CL-004"
+  ],
+  "related_events": [
+    "RM-2026-001",
+    "RM-2026-002",
+    "RM-2026-003"
+  ],
+  "artifacts": [
+    {
+      "label": "Project Constitution",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/PROJECT_CONSTITUTION.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "PROJECT_CONSTITUTION.md",
+      "blob_sha": "eadad9e01cd85fbf1bcee48240b7e688ffe7012c"
+    },
+    {
+      "label": "Decision Log",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/DECISION_LOG.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "DECISION_LOG.md",
+      "blob_sha": "183423d9ec507625dc7eb344573ccbdfd75f0f9d"
+    },
+    {
+      "label": "Paper 1 outline",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/paper/outline.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "paper/outline.md",
+      "blob_sha": "ece8b30328fe1e7b8a9c8ba37c13f516b7e325e7"
+    },
+    {
+      "label": "Manuscript v0.1 snapshot",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/paper/manuscript_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "paper/manuscript_v0.1.md",
+      "blob_sha": "281127cbaea3b84d23021092089cddf25eae1369",
+      "note": "Working manuscript only; not independent evidence of its own quantitative statements."
+    },
+    {
+      "label": "Accepted chat theory/design/philosophy archive",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "blob_sha": "b2bc548831da43ccfe2575764a0bed200ca2d3b8"
+    }
+  ],
+  "limitations": [
+    "This map describes the current outline and draft snapshot, not a completed paper or completed evaluation.",
+    "Quantitative statements in manuscript_v0.1 must be traced to their actual validation artifacts before publication.",
+    "No real-world predictive or causal claim is supported by this map."
+  ],
+  "last_updated": "2026-10-22"
+}
