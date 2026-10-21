@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "record_type": "RESEARCH_EVENT",
+  "id": "RM-2026-008",
+  "title": "Historical ZQX native execution probe is a bounded unmerged diagnostic, not accepted runtime evidence",
+  "significance": "R2",
+  "event_type": "BENCHMARK",
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "status": "HISTORICAL",
+  "source_repository": {
+    "name": "15937-ass/ziwei-state-space",
+    "ref": "main",
+    "commit_sha": "11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86"
+  },
+  "research_question": "What does the historical native PL1–PL3 diagnostic report, and which authority and inference limits must remain attached to its results?",
+  "before_state": "A successful diagnostic run could be mistaken for a merged production capability or evidence of real-world predictive accuracy.",
+  "result": "Draft PR #289 reports a bounded diagnostic: 12/12 palace major-star sets matched the supplied structural chart; two engines had zero computed differences across 80 annual snapshots after input gender-label normalization only; 59 W01 wealth rules were evaluated with 15 active and 44 inactive; PL3-N confidence was LOW_CONFIDENCE; the production temporal reaction registry and manifestation/probability registries were empty. The PR remains draft/unmerged, and its tracking Issue #288 is closed as deferred/superseded by #291.",
+  "key_insights": [
+    "The reported comparison is limited to the tested major-star sets and annual snapshot fields, not every chart annotation or all possible dates.",
+    "15 active rules are triggered evidence/conditions, not 15 real-world events or probabilities.",
+    "The probe records a compatibility alias for PL1 仆役 versus PL2 交友 in its isolated diagnostic; it does not modify canonical code or rules.",
+    "The PR body reports 392 historical tests passed, but this task did not rerun the workflow or independently reproduce the result."
+  ],
+  "negative_findings": [
+    "Production temporal reaction output was zero because the production reaction registry was empty.",
+    "Manifestation ontology/mappings and probability tables were empty in the diagnostic baseline.",
+    "No real-world predictive validity, calibration or causal effect is established."
+  ],
+  "unexpected_findings": [
+    "The diagnostic surfaced a PL1/PL2 palace-name handoff mismatch (仆役 versus 交友) that was handled only by an explicit alias in the isolated branch."
+  ],
+  "claim_effects": {
+    "supported": [
+      "CL-009"
+    ],
+    "weakened": [],
+    "superseded": [],
+    "opened": [
+      "CL-009"
+    ]
+  },
+  "boundaries": {
+    "source_status": "The metrics are explicitly reported by a draft unmerged PR, not accepted main artifacts.",
+    "implementation_status": "A bounded diagnostic exists on the unmerged PR branch; main runtime is not changed by this PR.",
+    "internal_fidelity": "Historical PR body reports tests passed, but this task did not rerun or independently verify them; maturity remains UNTESTED in the claim registry.",
+    "empirical_status": "UNTESTED for real-world predictive validity.",
+    "causal_status": "No causal claim."
+  },
+  "paper_targets": [],
+  "artifacts": [
+    {
+      "label": "PR #289 — bounded native ZQX execution probe, draft and unmerged",
+      "url": "https://github.com/15937-ass/ziwei-state-space/pull/289",
+      "authority_status": "UNMERGED_PR",
+      "note": "The PR body reports 392 historical tests passed, 12/12 natal major-star palace matches, zero dual-engine differences over 80 years after input gender-label normalization, and 15/59 wealth rules active. These results were not rerun in this Sidecar task. Issue #288 is closed DEFERRED/SUPERSEDED BY #291. This PR is not accepted main implementation."
+    },
+    {
+      "label": "Product lane state cache",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_STATE.yaml",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_STATE.yaml",
+      "blob_sha": "6d9d367f00b159fa8e5006f564b7ff4640c0ece6",
+      "note": "State cache itself says it is as of an earlier Product commit; live issues and accepted main artifacts remain authoritative."
+    },
+    {
+      "label": "Product future workplan",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "blob_sha": "302cd22721f6a1721d078450cea7168af0e0b856"
+    }
+  ],
+  "authority_notes": "This record preserves a historical diagnostic with UNMERGED_PR provenance. It must not be included as accepted-main evidence of production implementation. No GitHub Actions were invoked in this Sidecar task, and PR #289 was not changed or merged.",
+  "supersedes": [],
+  "superseded_by": []
+}
