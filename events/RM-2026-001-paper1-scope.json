@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "record_type": "RESEARCH_EVENT",
+  "id": "RM-2026-001",
+  "title": "Paper 1 scope and epistemic boundary frozen",
+  "significance": "R3",
+  "event_type": "METHOD",
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "status": "ACTIVE",
+  "source_repository": {
+    "name": "15937-ass/ziwei-state-space",
+    "ref": "main",
+    "commit_sha": "f6944c896efd8f215d4e7d9d89f9fa4db84759f6"
+  },
+  "research_question": "What is the first paper entitled to claim, and what must remain outside its evidential scope?",
+  "before_state": "The project had a broad Zi Wei system-building ambition, with a risk that formalization, predictive validity, and physical ontology could be conflated.",
+  "result": "The accepted project constitution, frozen decisions, outline and manuscript snapshot define Paper 1 as source-grounded Zhongzhou-school formalization and internal reproducibility work, not a claim of real-world predictive or causal validity.",
+  "key_insights": [
+    "The scope is bounded to Zhongzhou-school material; other schools are not mixed into the canonical core.",
+    "Qi is operationalized as a latent-state representation, not an empirically established physical energy.",
+    "No arbitrary empirical continuous weights are allowed before system identification.",
+    "Internal fidelity and reproducibility do not establish external predictive validity."
+  ],
+  "negative_findings": [
+    "The inspected manuscript is a draft snapshot and cannot serve as independent validation of its own quantitative claims."
+  ],
+  "unexpected_findings": [],
+  "claim_effects": {
+    "supported": [
+      "CL-001",
+      "CL-002",
+      "CL-003"
+    ],
+    "weakened": [],
+    "superseded": [],
+    "opened": []
+  },
+  "boundaries": {
+    "source_status": "Explicitly stated in accepted project-method artifacts; not a claim that classical sources establish a modern scientific theory.",
+    "implementation_status": "Scope and model design specified; full source corpus and implementation closure remain separate work.",
+    "internal_fidelity": "Not evaluated by this scope record.",
+    "empirical_status": "No real-world predictive-validity result is established by this event.",
+    "causal_status": "No causal claim."
+  },
+  "paper_targets": [
+    "Paper 1 Introduction",
+    "Paper 1 Corpus and Knowledge Formalization",
+    "Paper 1 Evaluation",
+    "Paper 1 Discussion and Limitations"
+  ],
+  "artifacts": [
+    {
+      "label": "Project Constitution",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/PROJECT_CONSTITUTION.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "PROJECT_CONSTITUTION.md",
+      "blob_sha": "eadad9e01cd85fbf1bcee48240b7e688ffe7012c"
+    },
+    {
+      "label": "Decision Log",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/DECISION_LOG.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "DECISION_LOG.md",
+      "blob_sha": "183423d9ec507625dc7eb344573ccbdfd75f0f9d"
+    },
+    {
+      "label": "Paper 1 outline",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/paper/outline.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "paper/outline.md",
+      "blob_sha": "ece8b30328fe1e7b8a9c8ba37c13f516b7e325e7"
+    },
+    {
+      "label": "Manuscript v0.1 snapshot",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/paper/manuscript_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "paper/manuscript_v0.1.md",
+      "blob_sha": "281127cbaea3b84d23021092089cddf25eae1369",
+      "note": "Working manuscript only; not independent evidence of its own quantitative statements."
+    }
+  ],
+  "authority_notes": "This event records the accepted project scope. It does not certify that every planned implementation or evaluation has been completed.",
+  "supersedes": [],
+  "superseded_by": []
+}
