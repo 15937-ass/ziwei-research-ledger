@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Paper and Research Question Map",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "record_type",
+    "map_id",
+    "candidate_paper",
+    "status",
+    "working_title",
+    "paper_snapshot",
+    "research_questions",
+    "related_claims",
+    "related_events",
+    "artifacts",
+    "limitations",
+    "last_updated"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_type": {
+      "const": "PAPER_MAP"
+    },
+    "map_id": {
+      "type": "string",
+      "pattern": "^PM-[A-Z0-9-]+$"
+    },
+    "candidate_paper": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "PLANNING",
+        "DRAFT_SNAPSHOT",
+        "ACTIVE_MANUSCRIPT",
+        "SUPERSEDED"
+      ]
+    },
+    "working_title": {
+      "type": "object",
+      "required": [
+        "en",
+        "zh"
+      ],
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "zh": {
+          "type": "string"
+        }
+      }
+    },
+    "paper_snapshot": {
+      "type": "object",
+      "required": [
+        "path",
+        "url",
+        "blob_sha",
+        "version",
+        "role"
+      ],
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "blob_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "version": {
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "HISTORICAL_MANUSCRIPT_SNAPSHOT",
+            "CURRENT_DRAFT",
+            "PUBLISHED_VERSION"
+          ]
+        }
+      }
+    },
+    "research_questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "question",
+          "related_claims",
+          "methods",
+          "evaluation",
+          "paper_sections",
+          "wording_ceiling"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string"
+          },
+          "related_claims": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "methods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evaluation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "paper_sections": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "wording_ceiling": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "related_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_events": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "url",
+          "authority_status"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "authority_status": {
+            "enum": [
+              "ACCEPTED_MAIN",
+              "MERGED_PR",
+              "OPEN_ISSUE",
+              "UNMERGED_PR",
+              "CLOSED_UNMERGED_PR",
+              "CHAT_CONTEXT",
+              "DERIVED_SYNTHESIS"
+            ]
+          },
+          "repository_path": {
+            "type": "string"
+          },
+          "blob_sha": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}
