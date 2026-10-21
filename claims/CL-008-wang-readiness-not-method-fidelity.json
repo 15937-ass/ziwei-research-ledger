@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CLAIM",
+  "claim_id": "CL-008",
+  "title": "Wang case replay readiness is not expert-method fidelity",
+  "claim": "The Wang Tingzhi corpus contains 24 source cases and 24 target-palace evidence materializations, with retrieval and action selection marked ready for all 24 folds; the cited readiness v0.2 still reports 0/24 full expert replay readiness and 24/24 full-chart blockers.",
+  "claim_domain": "RESEARCH_HYPOTHESIS",
+  "evidence_basis": "PROJECT_ARTIFACT",
+  "status": "ACTIVE",
+  "source_status": "EXPLICIT",
+  "implementation_status": "PARTIALLY_IMPLEMENTED",
+  "internal_fidelity": "UNTESTED",
+  "empirical_status": "UNTESTED",
+  "causal_status": "NONE",
+  "maturity_note": "The corpus and blind target-palace evidence are materialized, but the full chart is not materialized and the method patterns do not directly target the twelve case domains. The readiness file explicitly says it is not method-fidelity or predictive-validity evidence.",
+  "wording_ceiling": "Say 'source-grounded 24-case corpus with partial replay readiness'; do not claim completed expert replay, method fidelity, or predictive validity.",
+  "evidence_refs": [
+    {
+      "label": "Wang Tingzhi 24-case corpus acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_EXPERT_CASE_CORPUS_ACCEPTANCE_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_EXPERT_CASE_CORPUS_ACCEPTANCE_v0.1.md",
+      "blob_sha": "7145a311fcd3eb78e9c00f7b63b81b2c602a3839"
+    },
+    {
+      "label": "Wang blind-evidence materialization acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_BLIND_EVIDENCE_MATERIALIZATION_V0_1_ACCEPTANCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_BLIND_EVIDENCE_MATERIALIZATION_V0_1_ACCEPTANCE.md",
+      "blob_sha": "063e92a84beae349849ae5b139b387a528ee1dbd"
+    },
+    {
+      "label": "Wang method-policy readiness v0.2",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_METHOD_POLICY_READINESS_v0.2.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_METHOD_POLICY_READINESS_v0.2.json",
+      "blob_sha": "375d438346b9dd696b336a39311b60bd5568d2fb"
+    }
+  ],
+  "limitations": [
+    "Only source-visible target-palace major-star facts are materialized in the blind evidence layer.",
+    "Subject identity, expert prose, conclusions, outcomes and external biography must remain unavailable to the blind evaluator.",
+    "Full replay requires full-chart materialization and target-scope method binding."
+  ],
+  "last_updated": "2026-10-22",
+  "supersedes": [],
+  "superseded_by": []
+}
