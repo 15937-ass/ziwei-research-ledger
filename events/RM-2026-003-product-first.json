@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "record_type": "RESEARCH_EVENT",
+  "id": "RM-2026-003",
+  "title": "Product-first strategy and expert-reasoning separation",
+  "significance": "R3",
+  "event_type": "PRODUCT",
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "status": "ACTIVE",
+  "source_repository": {
+    "name": "15937-ass/ziwei-state-space",
+    "ref": "main",
+    "commit_sha": "f6944c896efd8f215d4e7d9d89f9fa4db84759f6"
+  },
+  "research_question": "How should the project organize product capability, expert procedural knowledge, empirical calibration and paper production without allowing manuscript needs to distort the system?",
+  "before_state": "The work could have remained manuscript-led, while declarative rules, expert inference procedure, response behavior and empirical calibration risked being treated as one undifferentiated object.",
+  "result": "The accepted project rationale prioritizes a reliable, traceable product and separates canonical declarative knowledge (Kc), response knowledge (Kr), inference policy (π), empirical calibration parameters (θ) and individual state belief (b). Manuscript prose is treated as an output/snapshot rather than the project's memory.",
+  "key_insights": [
+    "The product should earn academic claims through its actual formalization, validation and later empirical evidence.",
+    "Knowing what a source rule says differs from knowing how an expert orders and combines rules.",
+    "Textbook expert cases support method-fidelity reconstruction; they are not automatically real-world probability labels.",
+    "Different accuracy questions must remain separate: chart calculation, source-rule fidelity, inference consistency, blind prediction and calibration/abstention."
+  ],
+  "negative_findings": [
+    "A single aggregate accuracy number is not sufficient to characterize the system."
+  ],
+  "unexpected_findings": [],
+  "claim_effects": {
+    "supported": [
+      "CL-001",
+      "CL-003"
+    ],
+    "weakened": [],
+    "superseded": [],
+    "opened": []
+  },
+  "boundaries": {
+    "source_status": "Accepted project architecture and historical rationale, not a classical-source claim.",
+    "implementation_status": "Product architecture and roadmap specify the separation; individual runtime components have their own maturity states.",
+    "internal_fidelity": "Must be assessed through the relevant benchmark, not inferred from architecture existence.",
+    "empirical_status": "No predictive increment is claimed by this design event.",
+    "causal_status": "No causal recommendation is supported."
+  },
+  "paper_targets": [
+    "Paper 1 Discussion",
+    "Future expert-method paper",
+    "Future empirical evaluation"
+  ],
+  "artifacts": [
+    {
+      "label": "Accepted chat theory/design/philosophy archive",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
+      "blob_sha": "b2bc548831da43ccfe2575764a0bed200ca2d3b8"
+    },
+    {
+      "label": "Decision Log",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/DECISION_LOG.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "DECISION_LOG.md",
+      "blob_sha": "183423d9ec507625dc7eb344573ccbdfd75f0f9d"
+    },
+    {
+      "label": "Product future workplan",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/main/product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "blob_sha": "302cd22721f6a1721d078450cea7168af0e0b856"
+    }
+  ],
+  "authority_notes": "This is an accepted project-method rationale. It does not mean all Product v0.4 components or empirical calibration are complete.",
+  "supersedes": [],
+  "superseded_by": []
+}
