@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "record_type": "EVIDENCE_PACK",
+  "id": "EP-004",
+  "title": "Historical bounded ZQX native execution probe — unmerged diagnostic only",
+  "generated_at": "2026-10-22T22:00:00+08:00",
+  "generation_mode": "CURATED_V1",
+  "source_main_sha": "11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86",
+  "claim_ids": [
+    "CL-009"
+  ],
+  "supporting_events": [
+    "RM-2026-008"
+  ],
+  "accepted_artifacts": [
+    {
+      "label": "Product lane state cache",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_STATE.yaml",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_STATE.yaml",
+      "blob_sha": "6d9d367f00b159fa8e5006f564b7ff4640c0ece6",
+      "note": "State cache itself says it is as of an earlier Product commit; live issues and accepted main artifacts remain authoritative."
+    },
+    {
+      "label": "Product future workplan",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "blob_sha": "302cd22721f6a1721d078450cea7168af0e0b856"
+    },
+    {
+      "label": "Project Constitution",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/PROJECT_CONSTITUTION.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "PROJECT_CONSTITUTION.md",
+      "blob_sha": "eadad9e01cd85fbf1bcee48240b7e688ffe7012c"
+    }
+  ],
+  "conflicts_and_limitations": [
+    "The reported numeric results come from draft PR #289, which remains unmerged, not from accepted main implementation.",
+    "The PR body reports 392 tests passed in a historical workflow, but this task did not invoke GitHub Actions or independently rerun those tests.",
+    "Issue #288 is closed as deferred/superseded by #291; the probe is not the active Product work unit.",
+    "The 12/12 major-star comparison and 80-year zero-difference comparison are bounded to the fields and input normalization described by the PR.",
+    "The production temporal reaction registry and manifestation/probability registries were empty in the diagnostic baseline; no predictive validity or calibration is established."
+  ],
+  "wording_ceiling": "Draft PR #289 reports a bounded diagnostic of chart computation, annual snapshots and wealth-rule activation. Its results remain unmerged historical diagnostic evidence, not accepted main runtime or predictive-validity evidence.",
+  "forbidden_inferences": [
+    "The diagnostic is part of accepted main runtime.",
+    "15 active wealth rules mean 15 real-world events or probabilities.",
+    "Zero differences over the tested snapshots prove all chart outputs are identical.",
+    "An empty reaction registry means a negative event prediction.",
+    "Historical workflow results establish predictive validity or causal effects."
+  ],
+  "status": "DRAFT"
+}
