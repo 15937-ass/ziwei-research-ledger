@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "record_type": "RESEARCH_EVENT",
+  "id": "RM-2026-005",
+  "title": "Career source census closed by disposition, while outcome mapping remains blocked",
+  "significance": "R2",
+  "event_type": "KNOWLEDGE",
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "status": "ACTIVE",
+  "source_repository": {
+    "name": "15937-ass/ziwei-state-space",
+    "ref": "main",
+    "commit_sha": "11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86"
+  },
+  "research_question": "What does Career's structured-ID closure establish, and which source/semantic/compiler blockers remain after deep review?",
+  "before_state": "Large Career rule inventories risked being described as complete solely because every source rule had a structured ID or every blocked row had been reviewed.",
+  "result": "The accepted main backlog records 888/888 unique structured IDs with dispositions, but 513 BLOCKED_OUTCOME_MAPPING records remain in the strict-review census. Separately, the 251-row contextual-activation closure records a non-overlapping deep-source review of 228/228 blocked rows; its latest census has 26 row-local candidates, only 12 Knowledge condition-IR-ready, 14 still not condition-IR-ready, conditions_compiled=0 and execution_unlocked=0.",
+  "key_insights": [
+    "888/888 is an ID-disposition closure, not 888 executable judgments.",
+    "The 513 outcome-mapping blockers belong to the 888-rule Career census; the 228/228 deep-source-review statistic belongs to the separate 251-row contextual-activation closure. These denominators must not be merged.",
+    "The 251-row closure preserves source underdetermination and fail-closed behavior instead of inventing group quantifiers, generic meeting geometry or compound composition.",
+    "The 26 row-local candidates split into 12 Knowledge condition-IR-ready and 14 not condition-IR-ready; no Product condition compilation or execution unlock is claimed."
+  ],
+  "negative_findings": [
+    "Deep-source review does not by itself remove a semantic blocker.",
+    "Source closure and structured representation do not prove Product runtime executability.",
+    "The accepted artifacts report conditions_compiled=0 and execution_unlocked=0."
+  ],
+  "unexpected_findings": [
+    "251 of the 513 outcome-mapping blockers directly touch group/quantifier semantics when the backlog's non-mutually-exclusive group intersections are counted; this points to source-scoped group/quantifier treatment as a high-impact ontology dependency, not permission to add global defaults."
+  ],
+  "claim_effects": {
+    "supported": [
+      "CL-006",
+      "CL-007"
+    ],
+    "weakened": [],
+    "superseded": [],
+    "opened": [
+      "CL-007"
+    ]
+  },
+  "boundaries": {
+    "source_status": "Explicit in accepted Knowledge artifacts at the recorded main checkpoint.",
+    "implementation_status": "Structured dispositions and selected condition-IR records exist; Product compilation and execution unlock remain zero in the cited readiness artifacts.",
+    "internal_fidelity": "The records include deterministic census and validation contracts; this event does not rerun their test suites.",
+    "empirical_status": "Not an empirical prediction result.",
+    "causal_status": "No causal claim."
+  },
+  "paper_targets": [
+    "Paper 1 Evaluation",
+    "Paper 1 Limitations"
+  ],
+  "artifacts": [
+    {
+      "label": "Career blocker ontology backlog — 888 IDs and 513 outcome-mapping blockers",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp07c/CAREER_BLOCKER_ONTOLOGY_BACKLOG_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp07c/CAREER_BLOCKER_ONTOLOGY_BACKLOG_v0.1.md",
+      "blob_sha": "f9566ce907a1973864239511ab832a64429670ac"
+    },
+    {
+      "label": "Career contextual activation closure v0.16",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp07c/CAREER_CONTEXTUAL_ACTIVATION_CLOSURE_251_v0.16.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp07c/CAREER_CONTEXTUAL_ACTIVATION_CLOSURE_251_v0.16.json",
+      "blob_sha": "d413669303375d7fc36624c33fde9c02f6ae8306"
+    },
+    {
+      "label": "Career response compatibility closure — 251/251",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp07c/CAREER_RESPONSE_COMPATIBILITY_CLOSURE_v0.1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp07c/CAREER_RESPONSE_COMPATIBILITY_CLOSURE_v0.1.json",
+      "blob_sha": "7759b636ddbd3fa8440e8506642061a389dd89b2"
+    },
+    {
+      "label": "Career residual 28 final source-pass execution evidence",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/validation/knowledge/issue_501_career_residual_28/EXECUTION_EVIDENCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "validation/knowledge/issue_501_career_residual_28/EXECUTION_EVIDENCE.md",
+      "blob_sha": "8ccd4a2d4c93f8aea3902048398b0b7de0a94810"
+    },
+    {
+      "label": "Career compiler-readiness census — 26 candidates",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp08/CAREER_COMPILER_READINESS_CENSUS_26_v0.1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp08/CAREER_COMPILER_READINESS_CENSUS_26_v0.1.json",
+      "blob_sha": "71317dec9356b4b53601d123744c2f009af0e972"
+    },
+    {
+      "label": "Career dependency condition IR — 3 records",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp08/CAREER_DEPENDENCY_IR_3_v0.1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp08/CAREER_DEPENDENCY_IR_3_v0.1.json",
+      "blob_sha": "c5df80d97148b00240d867712f9bb110d7d13e4c"
+    },
+    {
+      "label": "Career direct condition IR — 9 records",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp08/CAREER_DIRECT_CONDITION_IR_9_v0.1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp08/CAREER_DIRECT_CONDITION_IR_9_v0.1.json",
+      "blob_sha": "27b1be88be82acca624cd9f52f079ce6df7d67d9"
+    }
+  ],
+  "authority_notes": "This event deliberately preserves two different denominators (888 Career canonical IDs and 251 contextual-activation records). Do not imply that the 228 deep-reviewed rows are the same set as the 513 outcome-mapping blockers. No Knowledge files were modified by this Sidecar work.",
+  "supersedes": [],
+  "superseded_by": []
+}
