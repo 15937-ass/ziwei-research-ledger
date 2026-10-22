@@ -9,6 +9,7 @@ checkpoint_mode: "CURATED_BOOTSTRAP_PLUS_REVIEWED_R1_CATCHUP"
 history_replay_complete: false
 research_schema_version: "1.0"
 migration_status: "CURATED_BOOTSTRAP_COMPLETE_WITH_LIMITATIONS"
+backfill_status: "RSM2_CANDIDATE_PENDING_REVIEW"
 bootstrap_pr: 2
 bootstrap_merge_sha: "a3c50056f5c239823abe71c9f13df459d74ad12f"
 seeded_events:
@@ -16,23 +17,37 @@ seeded_events:
   - "RM-2026-002"
   - "RM-2026-003"
   - "RM-2026-004"
+  - "RM-2026-005"
+  - "RM-2026-006"
+  - "RM-2026-007"
+  - "RM-2026-008"
 seeded_claims:
   - "CL-001"
   - "CL-002"
   - "CL-003"
   - "CL-004"
   - "CL-005"
+  - "CL-006"
+  - "CL-007"
+  - "CL-008"
+  - "CL-009"
+  - "CL-010"
 seeded_theory_records:
   - "TE-001"
   - "TE-002"
   - "TE-003"
   - "TE-004"
+  - "TE-005"
+  - "TE-006"
 concept_events:
   - "CE-2026-001"
 paper_maps:
   - "PM-P1-FORMALIZATION"
 evidence_packs:
   - "EP-001"
+  - "EP-002"
+  - "EP-003"
+  - "EP-004"
 known_open_sources:
   - "https://github.com/15937-ass/ziwei-state-space/issues/513"
   - "https://github.com/15937-ass/ziwei-state-space/pull/562"
