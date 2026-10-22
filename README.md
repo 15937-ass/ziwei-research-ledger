@@ -19,11 +19,11 @@ This repository stores non-authoritative research memory: major research events,
 - **SCHEMA.md** — human-readable record semantics and maturity axes.
 - **RESEARCH_STATE.yaml** — source checkpoint and migration status.
 - **schemas/** — JSON Schema contracts for each record type.
-- **events/** — R2/R3/R4 milestones and explicit Concept Events (RM-2026-001 through RM-2026-009).
-- **claims/** — claim registry with independent source, implementation, internal-fidelity, empirical and causal axes (CL-001 through CL-011).
+- **events/** — R2/R3/R4 milestones and explicit Concept Events (RM-2026-001 through RM-2026-010).
+- **claims/** — claim registry with independent source, implementation, internal-fidelity, empirical and causal axes (CL-001 through CL-012).
 - **theory/** — theory evolution and supersession history (TE-001 through TE-006).
 - **paper_map/** — research questions, claims, manuscript sections and evidence links.
-- **evidence_packs/** — curated claim-bounded evidence packs (EP-001 through EP-005).
+- **evidence_packs/** — curated claim-bounded evidence packs (EP-001 through EP-006).
 - **migration/** — source audit, overlap notes and migration limitations.
 - **templates/** — capture guidance and ID conventions.
 
