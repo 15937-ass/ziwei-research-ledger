@@ -108,3 +108,28 @@ These are recorded with `UNMERGED_PR` provenance and have not been rerun in this
 - Theory Evolution: TE-005 and TE-006.
 - Evidence Packs: EP-002 through EP-004.
 - Paper Map PM-P1-FORMALIZATION adds only the bounded Career maturity claim relevant to evaluation; Product-only and unmerged diagnostic claims are not promoted into Paper 1 findings.
+
+
+## 8. Main advanced during RSM-2: Product #545 / PR #554 (R2)
+
+A final checkpoint recheck found one new source-main commit after the earlier checkpoint:
+
+- Previous checkpoint: `11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86`
+- Current source main: `81fca994340e06a4b0f3dc3c31427b3f24a2a62d`
+- Compare result: one commit ahead, zero behind.
+- Commit: Product #545 — audit Wang source inputs and reconstruction readiness.
+- PR #554 is merged; Issue #545 is closed as completed.
+
+The commit adds a source-bounded Wang 24-case reconstruction readiness layer. Accepted main artifacts report 22/24 source-usable birth signatures, 2 hard source blockers, 37 bounded candidate inputs and the following target-anchor census:
+
+- 11 UNIQUE_ANCHOR_MATCH;
+- 6 MULTIPLE_ANCHOR_MATCH;
+- 5 NO_ANCHOR_MATCH;
+- 2 BLOCKED_SOURCE_INCOMPLETE;
+- 0 ENGINE_UNSUPPORTED.
+
+Only the 11 unique matches are eligible for a subsequent full-chart materialization work unit. The current Product state names `WANG_FULL_CHART_MATERIALIZATION_V0_1B` as next work, so the Sidecar does not claim that 11 full charts are already materialized. The target anchor covers palace identity and fourteen-major-star structure (or source-explicit opposite-palace borrowing), not all source-chart annotations. Full expert replay remains a separate blocked stage.
+
+The merged PR and acceptance artifact report that the pinned reconstruction probe passed and that 2,376 pytest tests passed. These are existing accepted-main validation records; no GitHub Actions were invoked during this Sidecar task.
+
+This commit is classified as R2 method/reconstruction-readiness progress and captured as RM-2026-009. RESEARCH_STATE.yaml advances to the inspected source-main SHA only after this classification. `history_replay_complete` remains false because the Sidecar is still a curated backfill, not a full historical replay.
