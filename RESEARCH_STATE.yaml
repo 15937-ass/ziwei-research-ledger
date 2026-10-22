@@ -58,3 +58,5 @@ notes:
   - "Main advanced from the seed SHA by one reviewed R1 commit during bootstrap; checkpoint advanced only after classifying it."
   - "RSM-1 bootstrap was accepted into Sidecar main by PR #2 at the recorded merge SHA."
   - "Capture remains manual/on-demand; no automated ingestion or GitHub Actions workflow is introduced."
+  - "RSM-2 adds four research events, five claims, two theory records and three evidence packs; all PR #289 measurements remain labelled UNMERGED_PR."
+  - "RSM-2 is a review candidate until its Sidecar PR is accepted."
