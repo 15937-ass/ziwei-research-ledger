@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "record_type": "EVIDENCE_PACK",
+  "id": "EP-003",
+  "title": "Wang expert replay and Product Knowledge lock maturity boundaries",
+  "generated_at": "2026-10-22T22:00:00+08:00",
+  "generation_mode": "CURATED_V1",
+  "source_main_sha": "11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86",
+  "claim_ids": [
+    "CL-007",
+    "CL-008",
+    "CL-010",
+    "CL-011"
+  ],
+  "supporting_events": [
+    "RM-2026-006",
+    "RM-2026-007",
+    "RM-2026-009"
+  ],
+  "accepted_artifacts": [
+    {
+      "label": "Active Product Knowledge lock v0.3",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_KNOWLEDGE.lock.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_KNOWLEDGE.lock.json",
+      "blob_sha": "39985e1be3d974b414e683925f4a135c0dc69e91"
+    },
+    {
+      "label": "Response Semantics Product Adapter v0.2",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/RESPONSE_SEMANTICS_ADAPTER_V0_2.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/RESPONSE_SEMANTICS_ADAPTER_V0_2.md",
+      "blob_sha": "b354f256f084cc5353be8827948fae3f246473fe"
+    },
+    {
+      "label": "Response Semantics adapter readiness v0.3",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/RESPONSE_SEMANTICS_ADAPTER_READINESS_v0.3.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/RESPONSE_SEMANTICS_ADAPTER_READINESS_v0.3.json",
+      "blob_sha": "a537ced6040dc2116cfc8ef274a0cc4b0292dba5"
+    },
+    {
+      "label": "Career Response v0.16 promotion acceptance note",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_KNOWLEDGE_PROMOTION_CAREER_RESPONSE_V0_16_ACCEPTANCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_KNOWLEDGE_PROMOTION_CAREER_RESPONSE_V0_16_ACCEPTANCE.md",
+      "blob_sha": "6028e669d8d0e0dc2fc4d66f5d8fdb459d45bab4",
+      "note": "This file still labels validation pending; the active lock separately records KIB v0.3 as active. Preserve this status discrepancy rather than infer that every downstream validation is complete."
+    },
+    {
+      "label": "Wang Tingzhi 24-case corpus acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_EXPERT_CASE_CORPUS_ACCEPTANCE_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_EXPERT_CASE_CORPUS_ACCEPTANCE_v0.1.md",
+      "blob_sha": "7145a311fcd3eb78e9c00f7b63b81b2c602a3839"
+    },
+    {
+      "label": "Wang blind-evidence materialization acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_BLIND_EVIDENCE_MATERIALIZATION_V0_1_ACCEPTANCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_BLIND_EVIDENCE_MATERIALIZATION_V0_1_ACCEPTANCE.md",
+      "blob_sha": "063e92a84beae349849ae5b139b387a528ee1dbd"
+    },
+    {
+      "label": "Wang method-policy readiness v0.2",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_METHOD_POLICY_READINESS_v0.2.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_METHOD_POLICY_READINESS_v0.2.json",
+      "blob_sha": "375d438346b9dd696b336a39311b60bd5568d2fb"
+    },
+    {
+      "label": "Product future workplan",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "blob_sha": "302cd22721f6a1721d078450cea7168af0e0b856"
+    },
+    {
+      "label": "Wang source-input reconstruction acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/WANG_SOURCE_RECONSTRUCTION_V0_1_ACCEPTANCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_SOURCE_RECONSTRUCTION_V0_1_ACCEPTANCE.md",
+      "blob_sha": "71a1735830f6d7feb54975ab47d906a78ea38ceb"
+    },
+    {
+      "label": "Wang full-chart reconstruction readiness v0.1",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/expert_cases/wang_tingzhi/FULL_CHART_RECONSTRUCTION_READINESS_V0_1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/expert_cases/wang_tingzhi/FULL_CHART_RECONSTRUCTION_READINESS_V0_1.json",
+      "blob_sha": "a0ec93c5a17859a64d02eb029837c787c7b12bdf"
+    },
+    {
+      "label": "Wang source birth signatures v0.1",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/expert_cases/wang_tingzhi/SOURCE_BIRTH_SIGNATURES_V0_1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/expert_cases/wang_tingzhi/SOURCE_BIRTH_SIGNATURES_V0_1.json",
+      "blob_sha": "83800555169c4225427dbc35ae50e4ec21cf2257"
+    },
+    {
+      "label": "Current Product lane state cache after Product #545",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/PRODUCT_STATE.yaml",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_STATE.yaml",
+      "blob_sha": "ea95cc6e373da56a8e2e9907004ea51d6da0870c",
+      "note": "Names WANG_FULL_CHART_MATERIALIZATION_V0_1B as next work; it does not claim the 11 eligible charts are already materialized."
+    }
+  ],
+  "conflicts_and_limitations": [
+    "The prior method-policy readiness v0.2 reported full_chart_blocked=24 and full_expert_replay_ready=0 at its own snapshot.",
+    "The later accepted source reconstruction readiness evaluates 37 candidates: 11 unique anchor matches, 6 multiple matches, 5 no matches, 2 source-incomplete cases and 0 engine-unsupported candidates.",
+    "The 11 unique matches are eligible for later full-chart materialization; the current Product state names that materialization as next work, so actual full-chart materialization is not claimed here.",
+    "The anchor comparison covers target-palace identity and its fourteen-major-star system (or source-explicit opposite-palace borrowing), not every chart annotation.",
+    "The full expert replay remains blocked by missing full-chart materialization and method-pattern target-scope binding.",
+    "No real-world predictive validity, empirical probability or causal result is established."
+  ],
+  "wording_ceiling": "The accepted source-bounded reconstruction probe makes 11/24 Wang cases eligible for a later full-chart materialization step; 13 remain withheld. It does not claim that 11 full charts are already materialized or that expert replay is complete.",
+  "forbidden_inferences": [
+    "11 unique target-anchor matches mean 11 charts are fully verified against every source annotation.",
+    "37 bounded candidate inputs represent 37 independent cases.",
+    "Multiple candidate matches can be collapsed to one input without stronger source evidence.",
+    "No-anchor-match cases should be force-fit to the expected chart.",
+    "A source-incomplete birth signature may be filled from biography or reverse-solved from the chart.",
+    "Full-chart materialization is equivalent to full expert replay.",
+    "Expert replay readiness establishes predictive validity."
+  ],
+  "status": "REVIEWED"
+}

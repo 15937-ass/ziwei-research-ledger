@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "record_type": "RESEARCH_EVENT",
+  "id": "RM-2026-009",
+  "title": "Source-bounded Wang reconstruction makes 11 cases eligible for later materialization",
+  "significance": "R2",
+  "event_type": "METHOD",
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "status": "ACTIVE",
+  "source_repository": {
+    "name": "15937-ass/ziwei-state-space",
+    "ref": "main",
+    "commit_sha": "81fca994340e06a4b0f3dc3c31427b3f24a2a62d"
+  },
+  "research_question": "Can source-printed lunar birth signatures support reproducible full-chart reconstruction without guessing ambiguous or missing inputs?",
+  "before_state": "The 24-case Wang corpus had source-reviewed target-palace anchors for all cases, but full-chart materialization remained 0/24 and the prior method-policy readiness snapshot reported full expert replay readiness 0/24.",
+  "result": "Product #545 / PR #554 adds a source-bounded reconstruction readiness layer. Visual source review classifies 22/24 birth signatures as source-usable and 2/24 as hard source blockers; 37 bounded candidate inputs are evaluated with pinned iztro-js 2.6.1 using astro.byLunar and explicit Zhongzhou settings. Results: 11 UNIQUE_ANCHOR_MATCH, 6 MULTIPLE_ANCHOR_MATCH, 5 NO_ANCHOR_MATCH, 2 BLOCKED_SOURCE_INCOMPLETE, 0 ENGINE_UNSUPPORTED. Only the 11 unique matches are eligible for a later full-chart materialization step. Current Product state names that materialization as the next work unit; actual full-chart materialization and full expert replay are not claimed.",
+  "key_insights": [
+    "The reconstruction inputs are derived only from visually reviewed source-printed lunar birth signatures; OCR guesses, biography backfills and reverse-solving from the chart are excluded.",
+    "Explicit day alternatives and unqualified 子时 ambiguity are preserved as bounded candidate sets rather than collapsed to a single guessed input.",
+    "The pinned probe compares target-palace identity and its fourteen-major-star anchor, including source-explicit opposite-palace borrowing where applicable; this is not equivalence with every source-chart annotation.",
+    "The 11 unique matches pass a readiness gate for a later full-chart materialization step, not a full-chart or expert-method benchmark.",
+    "The six multiple matches, five no-anchor matches and two source-incomplete cases remain withheld."
+  ],
+  "negative_findings": [
+    "Only 11/24 cases are eligible for the next full-chart materialization stage; 13/24 remain withheld.",
+    "Full-chart materialization remains a separate pending Product work unit.",
+    "Full expert replay remains blocked by method-pattern target-scope binding even after chart materialization becomes possible.",
+    "No real-world predictive validity, empirical probability or causal result is established."
+  ],
+  "unexpected_findings": [
+    "Five source-usable cases do not reproduce the independent target-palace anchor under the pinned engine; these mismatches are preserved rather than force-fit.",
+    "The source itself contains two hard missing-input cases (one printed with day X and one incomplete across a page break), which cannot be filled from biography."
+  ],
+  "claim_effects": {
+    "supported": [
+      "CL-008",
+      "CL-011"
+    ],
+    "weakened": [],
+    "superseded": [],
+    "opened": [
+      "CL-011"
+    ]
+  },
+  "boundaries": {
+    "source_status": "Source input census and anchor comparisons are recorded in accepted main artifacts after merged Product #545 / PR #554.",
+    "implementation_status": "Source-bounded reconstruction readiness is implemented; 11 cases are eligible for later full-chart materialization, but current Product state names materialization as next work.",
+    "internal_fidelity": "The merged PR and acceptance record report the pinned reconstruction probe passed. This applies only to the bounded input/target-anchor contract; it does not validate the full chart or expert reasoning.",
+    "empirical_status": "No real-world outcome labels or predictive-validity test.",
+    "causal_status": "No causal claim."
+  },
+  "paper_targets": [],
+  "artifacts": [
+    {
+      "label": "Wang source-input reconstruction acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/WANG_SOURCE_RECONSTRUCTION_V0_1_ACCEPTANCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_SOURCE_RECONSTRUCTION_V0_1_ACCEPTANCE.md",
+      "blob_sha": "71a1735830f6d7feb54975ab47d906a78ea38ceb"
+    },
+    {
+      "label": "Wang full-chart reconstruction readiness v0.1",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/expert_cases/wang_tingzhi/FULL_CHART_RECONSTRUCTION_READINESS_V0_1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/expert_cases/wang_tingzhi/FULL_CHART_RECONSTRUCTION_READINESS_V0_1.json",
+      "blob_sha": "a0ec93c5a17859a64d02eb029837c787c7b12bdf"
+    },
+    {
+      "label": "Wang source birth signatures v0.1",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/expert_cases/wang_tingzhi/SOURCE_BIRTH_SIGNATURES_V0_1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/expert_cases/wang_tingzhi/SOURCE_BIRTH_SIGNATURES_V0_1.json",
+      "blob_sha": "83800555169c4225427dbc35ae50e4ec21cf2257"
+    },
+    {
+      "label": "Wang source-input reconstruction design",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/WANG_SOURCE_RECONSTRUCTION_V0_1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_SOURCE_RECONSTRUCTION_V0_1.md",
+      "blob_sha": "f709e224d173484ab4d91d8670d5f06e9cec81d7"
+    },
+    {
+      "label": "Wang reconstruction implementation",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/src/product/wang_source_reconstruction.py",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "src/product/wang_source_reconstruction.py",
+      "blob_sha": "f543bb7e7c10f0ca0c640b75c87573877d84702d"
+    },
+    {
+      "label": "Wang reconstruction deterministic tests",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/tests/test_product_wang_source_reconstruction.py",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "tests/test_product_wang_source_reconstruction.py",
+      "blob_sha": "3dff6542f8d98db0ac46deed95b0b91105939d0f"
+    },
+    {
+      "label": "Product lane state after Product #545",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/PRODUCT_STATE.yaml",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_STATE.yaml",
+      "blob_sha": "ea95cc6e373da56a8e2e9907004ea51d6da0870c",
+      "note": "The next work unit is WANG_FULL_CHART_MATERIALIZATION_V0_1B; the 11 cases are eligible for materialization, not already materialized."
+    },
+    {
+      "label": "PR #554 — accepted source-input reconstruction readiness implementation",
+      "url": "https://github.com/15937-ass/ziwei-state-space/pull/554",
+      "authority_status": "MERGED_PR",
+      "note": "Merged by commit 81fca994340e06a4b0f3dc3c31427b3f24a2a62d. The merge commit message reports 2,376 pytest tests passed and the pinned reconstruction probe passed. No Actions were invoked by this Sidecar task."
+    }
+  ],
+  "authority_notes": "This is accepted main Product evidence at commit 81fca994340e06a4b0f3dc3c31427b3f24a2a62d. The source-reconstruction probe was run as part of the merged Product PR before this Sidecar task; no GitHub Actions were invoked here. Do not promote 11 target-anchor matches to full source-chart equivalence, expert-method fidelity or predictive validity.",
+  "supersedes": [
+    "RM-2026-007"
+  ],
+  "superseded_by": []
+}

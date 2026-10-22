@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CLAIM",
+  "claim_id": "CL-011",
+  "title": "Wang source reconstruction readiness is limited to 11 unique target-anchor matches",
+  "claim": "The accepted Product #545 reconstruction probe evaluates 37 source-bounded candidate inputs across 24 Wang cases and reports 11 unique target-anchor matches, 6 multiple matches, 5 no matches, 2 source-incomplete cases and 0 engine-unsupported candidates. Only the 11 unique matches are eligible for a later full-chart materialization step; this does not mean those full charts are already materialized or validated against every source annotation.",
+  "claim_domain": "PRODUCT_BEHAVIOR",
+  "evidence_basis": "PROJECT_ARTIFACT",
+  "status": "ACTIVE",
+  "source_status": "EXPLICIT",
+  "implementation_status": "IMPLEMENTED",
+  "internal_fidelity": "CONTRACT_PASS",
+  "empirical_status": "NOT_APPLICABLE",
+  "causal_status": "NOT_APPLICABLE",
+  "maturity_note": "The accepted source reconstruction readiness and acceptance artifacts record the bounded probe outcome; PR #554 merged into main at commit 81fca. CONTRACT_PASS is limited to the pinned candidate-input/target-anchor readiness contract, not full-chart equivalence or expert replay.",
+  "wording_ceiling": "Say '11 of 24 cases are eligible for later full-chart materialization under a source-bounded target-anchor gate; 13 remain withheld.' Do not say 11 full charts are already fully verified, or that expert replay/predictive validity is established.",
+  "evidence_refs": [
+    {
+      "label": "Wang source-input reconstruction acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/WANG_SOURCE_RECONSTRUCTION_V0_1_ACCEPTANCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_SOURCE_RECONSTRUCTION_V0_1_ACCEPTANCE.md",
+      "blob_sha": "71a1735830f6d7feb54975ab47d906a78ea38ceb"
+    },
+    {
+      "label": "Wang full-chart reconstruction readiness v0.1",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/expert_cases/wang_tingzhi/FULL_CHART_RECONSTRUCTION_READINESS_V0_1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/expert_cases/wang_tingzhi/FULL_CHART_RECONSTRUCTION_READINESS_V0_1.json",
+      "blob_sha": "a0ec93c5a17859a64d02eb029837c787c7b12bdf"
+    },
+    {
+      "label": "Wang source birth signatures v0.1",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/expert_cases/wang_tingzhi/SOURCE_BIRTH_SIGNATURES_V0_1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/expert_cases/wang_tingzhi/SOURCE_BIRTH_SIGNATURES_V0_1.json",
+      "blob_sha": "83800555169c4225427dbc35ae50e4ec21cf2257"
+    },
+    {
+      "label": "Wang source-input reconstruction design",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/WANG_SOURCE_RECONSTRUCTION_V0_1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_SOURCE_RECONSTRUCTION_V0_1.md",
+      "blob_sha": "f709e224d173484ab4d91d8670d5f06e9cec81d7"
+    },
+    {
+      "label": "Wang reconstruction implementation",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/src/product/wang_source_reconstruction.py",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "src/product/wang_source_reconstruction.py",
+      "blob_sha": "f543bb7e7c10f0ca0c640b75c87573877d84702d"
+    },
+    {
+      "label": "Wang reconstruction deterministic tests",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/tests/test_product_wang_source_reconstruction.py",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "tests/test_product_wang_source_reconstruction.py",
+      "blob_sha": "3dff6542f8d98db0ac46deed95b0b91105939d0f"
+    },
+    {
+      "label": "Product lane state after Product #545",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/PRODUCT_STATE.yaml",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_STATE.yaml",
+      "blob_sha": "ea95cc6e373da56a8e2e9907004ea51d6da0870c",
+      "note": "The next work unit is WANG_FULL_CHART_MATERIALIZATION_V0_1B; the 11 cases are eligible for materialization, not already materialized."
+    },
+    {
+      "label": "PR #554 — accepted source-input reconstruction readiness implementation",
+      "url": "https://github.com/15937-ass/ziwei-state-space/pull/554",
+      "authority_status": "MERGED_PR",
+      "note": "Merged by commit 81fca994340e06a4b0f3dc3c31427b3f24a2a62d. The merge commit message reports 2,376 pytest tests passed and the pinned reconstruction probe passed. No Actions were invoked by this Sidecar task."
+    }
+  ],
+  "limitations": [
+    "Only source-printed lunar inputs and explicitly bounded alternatives are permitted; no OCR guesses, biography backfills or reverse-solving.",
+    "The target anchor checks palace identity and fourteen-major-star structure (or source-explicit opposite borrowing), not all auxiliary stars, transformations, annotations or full source-chart equivalence.",
+    "The next Product work unit is full-chart materialization; this record does not claim that step is complete.",
+    "Six cases remain ambiguous, five do not match the anchor and two lack sufficient source input.",
+    "Full expert replay, method fidelity, empirical probability and predictive validity remain separate and unestablished."
+  ],
+  "last_updated": "2026-10-22",
+  "supersedes": [],
+  "superseded_by": []
+}

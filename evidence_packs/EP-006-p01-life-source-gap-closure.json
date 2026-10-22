@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "record_type": "EVIDENCE_PACK",
+  "id": "EP-006",
+  "title": "P01 Life source-gap closure — printed pages 5–9",
+  "generated_at": "2026-10-22T22:00:00+08:00",
+  "generation_mode": "CURATED_V1",
+  "source_main_sha": "9735cd7a78a3c0addcf93aad1730d775e691be40",
+  "claim_ids": [
+    "CL-012"
+  ],
+  "supporting_events": [
+    "RM-2026-010"
+  ],
+  "accepted_artifacts": [
+    {
+      "label": "P01 Life source-gap summary, printed pp5-9",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/9735cd7a78a3c0addcf93aad1730d775e691be40/knowledge/palaces/P01_life/wp05/LIFE_SOURCE_GAP_SUMMARY_PP5_9_v0.1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/palaces/P01_life/wp05/LIFE_SOURCE_GAP_SUMMARY_PP5_9_v0.1.json",
+      "blob_sha": "d3e321f7717a309ad3c61f293f832b533604e96c"
+    },
+    {
+      "label": "P01 Life source-gap closure ledger, printed pp5-9",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/9735cd7a78a3c0addcf93aad1730d775e691be40/knowledge/palaces/P01_life/wp05/LIFE_SOURCE_GAP_CLOSURE_LEDGER_PP5_9_v0.1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/palaces/P01_life/wp05/LIFE_SOURCE_GAP_CLOSURE_LEDGER_PP5_9_v0.1.json",
+      "blob_sha": "e2803555babef4264c9ef8223ced2349fda632d6"
+    },
+    {
+      "label": "P01 Life source time-scope supplement, printed pp5-9",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/9735cd7a78a3c0addcf93aad1730d775e691be40/knowledge/palaces/P01_life/wp05/LIFE_SOURCE_GAP_TIME_SCOPE_PP5_9_v0.1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/palaces/P01_life/wp05/LIFE_SOURCE_GAP_TIME_SCOPE_PP5_9_v0.1.json",
+      "blob_sha": "e8578e254559445860de5b3531bc429c9b5041c8"
+    },
+    {
+      "label": "P01 Life shard state after source-gap closure",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/9735cd7a78a3c0addcf93aad1730d775e691be40/knowledge/states/P01_LIFE_STATE.yaml",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/states/P01_LIFE_STATE.yaml",
+      "blob_sha": "796017ce20114fcf2f22a577b99bfda1dcd1733c",
+      "note": "State cache reports the registered source-gap closure and cumulative record counts; live Issues/PRs remain execution truth."
+    }
+  ],
+  "conflicts_and_limitations": [
+    "The source-gap supplement closes 20 registered gaps with new rules and confirms one was already covered by P02-200.",
+    "The 77 supplemental records include 13 CASE_SUPPORT_ONLY records; these are not reusable projection rules.",
+    "The source-gap summary explicitly limits its claim to the registered gap IDs and does not claim complete extraction of every possible claim on printed pages 5–9.",
+    "The P01 state cache points to further source-first review of historical candidates; this milestone does not complete the entire P01 corpus.",
+    "The validation results are reported in the merged PR; no validation workflow was run by this Sidecar task."
+  ],
+  "wording_ceiling": "The accepted Knowledge supplement closes 21 registered P01 source gaps on printed pp5–9 and adds 77 source-bounded records, while preserving source time scope and the distinction between reusable rules and case-only support.",
+  "forbidden_inferences": [
+    "Closing 21 registered gaps means all possible source claims on printed pp5–9 have been extracted.",
+    "All 77 supplemental records are reusable rules.",
+    "Case-support-only records are executable canonical rules.",
+    "The supplement introduced a new shared semantic primitive or time scale.",
+    "Source-gap closure establishes real-world predictive validity."
+  ],
+  "status": "REVIEWED"
+}

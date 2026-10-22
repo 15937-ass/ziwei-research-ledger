@@ -71,3 +71,87 @@ After the curated seed was written, main advanced by exactly one commit:
 This commit was inspected and classified as **R1 cumulative Knowledge progress**, not a distinct R2/R3/R4 research event. The checkpoint in RESEARCH_STATE.yaml therefore advances to the new SHA so it will not be replayed indefinitely. This is not a complete historical replay: `history_replay_complete` remains false, and earlier unseeded history remains outside this curated bootstrap.
 
 The new commit is a Knowledge-lane artifact. This sidecar records only the replay/checkpoint decision; it does not modify the source Knowledge files or promote their semantics.
+
+
+## 7. RSM-2 targeted historical evidence backfill (review candidate)
+
+The following records were added on Sidecar branch `research/5-evidence-backfill`. They remain candidate records until the Sidecar PR is accepted.
+
+### 7.1 Career census versus execution readiness
+
+Accepted main artifacts show two separate populations:
+- Career canonical ID census: 888/888 IDs have a disposition; 513 remain `BLOCKED_OUTCOME_MAPPING` in the strict-review census.
+- Career contextual-activation closure: 251 rows; 228/228 blocked rows across Issues #489/#498/#501 have deep-source review with zero overlap; the latest v0.16 readiness snapshot has 26 row-local candidates, only 12 Knowledge condition-IR-ready, 14 not condition-IR-ready, conditions_compiled=0 and execution_unlocked=0.
+
+These denominators are not interchangeable. Deep-source review does not imply blocker resolution, and structured-ID closure does not imply executable Product rules.
+
+### 7.2 Product Knowledge lock and Response Semantics
+
+At the examined main checkpoint, `product/PRODUCT_KNOWLEDGE.lock.json` declares `KIB-PRODUCT-20261021-V0_3` ACTIVE, pins artifact and semantic digests, records its source commit, disables auto-refresh, and names v0.2 as rollback target.
+
+The Response Semantics adapter/readiness artifacts preserve the fail-closed boundary: 8/8 pilot records remain semantic-only, 0/8 pilot runtime effects are authorized, and the 251-row Career readiness view has 0 conditions compiled and 0 execution unlocked. The separate `PRODUCT_KNOWLEDGE_PROMOTION_CAREER_RESPONSE_V0_16_ACCEPTANCE.md` still says validation pending. This status discrepancy is preserved rather than silently resolved.
+
+### 7.3 Wang expert-case readiness
+
+The accepted corpus inventory contains 24 source cases and blind-safe LOCO splits. Readiness v0.2 reports retrieval_ready=24, action_selection_ready=24, materialized target-palace evidence=24, full_expert_replay_ready=0 and full_chart_blocked=24. The next Product work unit is full-chart/method-scope review; this Sidecar backfill does not execute it. These readiness counters are not method-fidelity or predictive-validity results.
+
+### 7.4 Historical ZQX diagnostic authority
+
+PR #289 remains a draft, unmerged diagnostic PR. Its body reports 392 historical tests passed, 12/12 tested major-star palace sets matching, zero dual-engine differences across 80 annual snapshots after input gender-label normalization, and 15/59 wealth rules active. Issue #288 is closed as DEFERRED/SUPERSEDED BY #291.
+
+These are recorded with `UNMERGED_PR` provenance and have not been rerun in this task. They are not accepted main runtime evidence and do not establish predictive validity. No GitHub Actions were invoked, and PR #289 was not modified or merged.
+
+### 7.5 New record inventory
+
+- Research Events: RM-2026-005 through RM-2026-008.
+- Claims: CL-006 through CL-010.
+- Theory Evolution: TE-005 and TE-006.
+- Evidence Packs: EP-002 through EP-004.
+- Paper Map PM-P1-FORMALIZATION adds only the bounded Career maturity claim relevant to evaluation; Product-only and unmerged diagnostic claims are not promoted into Paper 1 findings.
+
+
+## 8. Main advanced during RSM-2: Product #545 / PR #554 (R2)
+
+A final checkpoint recheck found one new source-main commit after the earlier checkpoint:
+
+- Previous checkpoint: `11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86`
+- Current source main: `81fca994340e06a4b0f3dc3c31427b3f24a2a62d`
+- Compare result: one commit ahead, zero behind.
+- Commit: Product #545 — audit Wang source inputs and reconstruction readiness.
+- PR #554 is merged; Issue #545 is closed as completed.
+
+The commit adds a source-bounded Wang 24-case reconstruction readiness layer. Accepted main artifacts report 22/24 source-usable birth signatures, 2 hard source blockers, 37 bounded candidate inputs and the following target-anchor census:
+
+- 11 UNIQUE_ANCHOR_MATCH;
+- 6 MULTIPLE_ANCHOR_MATCH;
+- 5 NO_ANCHOR_MATCH;
+- 2 BLOCKED_SOURCE_INCOMPLETE;
+- 0 ENGINE_UNSUPPORTED.
+
+Only the 11 unique matches are eligible for a subsequent full-chart materialization work unit. The current Product state names `WANG_FULL_CHART_MATERIALIZATION_V0_1B` as next work, so the Sidecar does not claim that 11 full charts are already materialized. The target anchor covers palace identity and fourteen-major-star structure (or source-explicit opposite-palace borrowing), not all source-chart annotations. Full expert replay remains a separate blocked stage.
+
+The merged PR and acceptance artifact report that the pinned reconstruction probe passed and that 2,376 pytest tests passed. These are existing accepted-main validation records; no GitHub Actions were invoked during this Sidecar task.
+
+This commit is classified as R2 method/reconstruction-readiness progress and captured as RM-2026-009. RESEARCH_STATE.yaml advances to the inspected source-main SHA only after this classification. `history_replay_complete` remains false because the Sidecar is still a curated backfill, not a full historical replay.
+
+
+## 9. Main advanced during RSM-2: Knowledge P01 source-gap closure (R2)
+
+A final checkpoint recheck found one new source-main commit after the Wang reconstruction milestone:
+
+- Previous checkpoint: `81fca994340e06a4b0f3dc3c31427b3f24a2a62d`
+- Current source main: `9735cd7a78a3c0addcf93aad1730d775e691be40`
+- Compare result: one commit ahead, zero behind.
+- Commit: Knowledge(P01) — close Life source gaps on printed pp5–9.
+- PR #577 is merged and Issue #574 is closed as completed.
+
+Accepted main artifacts report:
+- 21 previously registered gap IDs dispositioned;
+- 20 closed by new source-first supplement records and 1 already covered by canonical P02-200;
+- 77 atomic supplemental records: 64 reusable projection rules and 13 CASE_SUPPORT_ONLY records;
+- cumulative P01 canonical records: 277 (213 reusable, 64 case-support-only);
+- zero new shared semantic primitives, memory types, independent time scales, numeric weights, probabilities or decay.
+
+This is a bounded closure of the registered gap set, not a claim that every possible claim on printed pp5–9 has been extracted or that the entire P01 source corpus is complete. The commit is classified as R2 source-gap progress and recorded as RM-2026-010. Its accepted PR reports the final-head test/audit/governance gate passed; no GitHub Actions were invoked by this Sidecar task.
+
+RESEARCH_STATE.yaml advances to `9735cd7a78a3c0addcf93aad1730d775e691be40` only after this classification. `history_replay_complete` remains false.

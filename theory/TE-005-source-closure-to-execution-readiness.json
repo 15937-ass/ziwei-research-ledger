@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "record_type": "THEORY_EVOLUTION",
+  "theory_id": "TE-005",
+  "title": "From rule census closure to staged executable readiness",
+  "status": "CANONICAL_METHOD_BOUNDARY",
+  "epistemic_class": "PROJECT_METHOD",
+  "old_model": "A complete structured-ID census or completed source review could be read as equivalent to an executable Product rule set.",
+  "observed_limitations": [
+    "Source review can resolve what a passage says while leaving group quantifiers, relation binding, antecedent dependencies, outcome mapping or compiler representation unresolved.",
+    "A row-local readiness label can overstate readiness if inherited dependency state is not considered.",
+    "Without a separate authorization boundary, semantic-only records could accidentally create runtime effects."
+  ],
+  "current_model": "Track source disposition, semantic closure, Knowledge condition-IR readiness, Product compilation, explicit runtime authorization, internal fidelity and empirical validation as distinct stages. Fail closed when any required stage is unresolved.",
+  "rationale": "The accepted Career and Response Semantics artifacts make these boundaries operational: 888/888 IDs can coexist with 513 outcome-mapping blockers; 228/228 deep-reviewed blocked rows can coexist with zero compilation/unlock; 26 row-local candidates can yield only 12 Knowledge condition-IR-ready records.",
+  "consequences": [
+    "Preserve denominator and cohort identity in every count.",
+    "Do not turn group/quantifier or relation blockers into global defaults.",
+    "Treat semantic-only as non-executable absent a separate authorization.",
+    "A later compiler or runtime promotion must be a separately versioned, validated event."
+  ],
+  "what_remains_valid": [
+    "Deep source review is valuable and can repair source transcription, scope or dependency defects.",
+    "Source-first structured representations are a prerequisite for reliable downstream compilation.",
+    "Accepted source semantics remain authoritative over Product convenience."
+  ],
+  "claim_effects": [
+    "Supports CL-006 and CL-007."
+  ],
+  "provenance": [
+    {
+      "label": "Career blocker ontology backlog — 888 IDs and 513 outcome-mapping blockers",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp07c/CAREER_BLOCKER_ONTOLOGY_BACKLOG_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp07c/CAREER_BLOCKER_ONTOLOGY_BACKLOG_v0.1.md",
+      "blob_sha": "f9566ce907a1973864239511ab832a64429670ac"
+    },
+    {
+      "label": "Career contextual activation closure v0.16",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp07c/CAREER_CONTEXTUAL_ACTIVATION_CLOSURE_251_v0.16.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp07c/CAREER_CONTEXTUAL_ACTIVATION_CLOSURE_251_v0.16.json",
+      "blob_sha": "d413669303375d7fc36624c33fde9c02f6ae8306"
+    },
+    {
+      "label": "Career compiler-readiness census — 26 candidates",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp08/CAREER_COMPILER_READINESS_CENSUS_26_v0.1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp08/CAREER_COMPILER_READINESS_CENSUS_26_v0.1.json",
+      "blob_sha": "71317dec9356b4b53601d123744c2f009af0e972"
+    },
+    {
+      "label": "Response Semantics Product Adapter v0.2",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/RESPONSE_SEMANTICS_ADAPTER_V0_2.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/RESPONSE_SEMANTICS_ADAPTER_V0_2.md",
+      "blob_sha": "b354f256f084cc5353be8827948fae3f246473fe"
+    },
+    {
+      "label": "Response Semantics adapter readiness v0.3",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/RESPONSE_SEMANTICS_ADAPTER_READINESS_v0.3.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/RESPONSE_SEMANTICS_ADAPTER_READINESS_v0.3.json",
+      "blob_sha": "a537ced6040dc2116cfc8ef274a0cc4b0292dba5"
+    }
+  ],
+  "boundaries": [
+    "This is a project-method boundary derived from accepted artifacts, not a new canonical Zhongzhou rule.",
+    "This record does not alter Knowledge or Product runtime semantics."
+  ],
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "supersedes": [],
+  "superseded_by": []
+}

@@ -92,7 +92,8 @@
       "question": "Can the formal system be audited and internally reproduced with traceable evidence?",
       "related_claims": [
         "CL-001",
-        "CL-003"
+        "CL-003",
+        "CL-006"
       ],
       "methods": [
         "Source provenance",
@@ -105,26 +106,29 @@
         "Annotation agreement",
         "Contradiction audit",
         "Semantic round-trip fidelity",
-        "Executable reproducibility"
+        "Executable reproducibility",
+        "Keep source disposition, Knowledge condition-IR readiness, Product compilation and execution authorization as separate maturity checkpoints."
       ],
       "paper_sections": [
         "5. Implementation",
         "6. Evaluation",
         "7. Discussion"
       ],
-      "wording_ceiling": "Internal fidelity supports faithful formalization only; it does not establish real-world predictive validity."
+      "wording_ceiling": "Internal fidelity supports faithful formalization only; it does not establish real-world predictive validity. Career census closure is a maturity-boundary example, not evidence that the full Product inference pipeline is executable."
     }
   ],
   "related_claims": [
     "CL-001",
     "CL-002",
     "CL-003",
-    "CL-004"
+    "CL-004",
+    "CL-006"
   ],
   "related_events": [
     "RM-2026-001",
     "RM-2026-002",
-    "RM-2026-003"
+    "RM-2026-003",
+    "RM-2026-005"
   ],
   "artifacts": [
     {
@@ -162,12 +166,41 @@
       "authority_status": "ACCEPTED_MAIN",
       "repository_path": "governance/archive/2026-10-21-chat-theory-design-philosophy-preservation.md",
       "blob_sha": "b2bc548831da43ccfe2575764a0bed200ca2d3b8"
+    },
+    {
+      "label": "Career blocker ontology backlog — 888 IDs and 513 outcome-mapping blockers",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp07c/CAREER_BLOCKER_ONTOLOGY_BACKLOG_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp07c/CAREER_BLOCKER_ONTOLOGY_BACKLOG_v0.1.md",
+      "blob_sha": "f9566ce907a1973864239511ab832a64429670ac"
+    },
+    {
+      "label": "Career contextual activation closure v0.16",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp07c/CAREER_CONTEXTUAL_ACTIVATION_CLOSURE_251_v0.16.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp07c/CAREER_CONTEXTUAL_ACTIVATION_CLOSURE_251_v0.16.json",
+      "blob_sha": "d413669303375d7fc36624c33fde9c02f6ae8306"
+    },
+    {
+      "label": "Career compiler readiness census",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp08/CAREER_COMPILER_READINESS_CENSUS_26_v0.1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp08/CAREER_COMPILER_READINESS_CENSUS_26_v0.1.json",
+      "blob_sha": "71317dec9356b4b53601d123744c2f009af0e972"
+    },
+    {
+      "label": "Career residual 28 final source-pass execution evidence",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/validation/knowledge/issue_501_career_residual_28/EXECUTION_EVIDENCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "validation/knowledge/issue_501_career_residual_28/EXECUTION_EVIDENCE.md",
+      "blob_sha": "8ccd4a2d4c93f8aea3902048398b0b7de0a94810"
     }
   ],
   "limitations": [
     "This map describes the current outline and draft snapshot, not a completed paper or completed evaluation.",
     "Quantitative statements in manuscript_v0.1 must be traced to their actual validation artifacts before publication.",
-    "No real-world predictive or causal claim is supported by this map."
+    "No real-world predictive or causal claim is supported by this map.",
+    "Career's 888/888 structured-ID census and its separate 251-row contextual-activation closure do not establish executable Product coverage; the cited readiness snapshot reports 0 conditions compiled and 0 execution unlocked."
   ],
   "last_updated": "2026-10-22"
 }

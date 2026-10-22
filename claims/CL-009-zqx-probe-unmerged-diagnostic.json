@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CLAIM",
+  "claim_id": "CL-009",
+  "title": "ZQX native probe supports only a bounded unmerged diagnostic claim",
+  "claim": "Draft PR #289 reports bounded chart/time-snapshot and wealth-rule diagnostic results, but because the PR remains unmerged and Issue #288 is deferred/superseded, these results are historical diagnostic evidence rather than accepted main implementation or real-world predictive validation.",
+  "claim_domain": "PRODUCT_BEHAVIOR",
+  "evidence_basis": "MIXED",
+  "status": "PROVISIONAL",
+  "source_status": "EXPLICIT",
+  "implementation_status": "PARTIALLY_IMPLEMENTED",
+  "internal_fidelity": "UNTESTED",
+  "empirical_status": "UNTESTED",
+  "causal_status": "NONE",
+  "maturity_note": "The PR body reports 392 tests passed, 12/12 major-star palace matches, zero dual-engine differences over 80 annual snapshots after gender-label normalization, and 15/59 W01 rules active. These are claims in an unmerged draft PR; this Sidecar task did not rerun Actions or independently reproduce them.",
+  "wording_ceiling": "Say 'draft PR #289 reports a bounded diagnostic result'; do not say these results are accepted main runtime behavior or evidence of predictive accuracy.",
+  "evidence_refs": [
+    {
+      "label": "PR #289 — bounded native ZQX execution probe, draft and unmerged",
+      "url": "https://github.com/15937-ass/ziwei-state-space/pull/289",
+      "authority_status": "UNMERGED_PR",
+      "note": "The PR body reports 392 historical tests passed, 12/12 natal major-star palace matches, zero dual-engine differences over 80 years after input gender-label normalization, and 15/59 wealth rules active. These results were not rerun in this Sidecar task. Issue #288 is closed DEFERRED/SUPERSEDED BY #291. This PR is not accepted main implementation."
+    },
+    {
+      "label": "Product future workplan",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_FUTURE_WORKPLAN_v0.1.md",
+      "blob_sha": "302cd22721f6a1721d078450cea7168af0e0b856"
+    },
+    {
+      "label": "Product lane state cache",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_STATE.yaml",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_STATE.yaml",
+      "blob_sha": "6d9d367f00b159fa8e5006f564b7ff4640c0ece6",
+      "note": "State cache itself says it is as of an earlier Product commit; live issues and accepted main artifacts remain authoritative."
+    }
+  ],
+  "limitations": [
+    "PR #289 is draft and unmerged.",
+    "Issue #288 is closed as deferred/superseded by #291.",
+    "Zero computational differences apply only to the compared fields and tested snapshots.",
+    "No real-world outcome labels, calibration, predictive validity or causal identification are present."
+  ],
+  "last_updated": "2026-10-22",
+  "supersedes": [],
+  "superseded_by": []
+}

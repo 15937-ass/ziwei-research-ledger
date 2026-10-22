@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "record_type": "RESEARCH_EVENT",
+  "id": "RM-2026-006",
+  "title": "Active Product Knowledge lock preserves version identity while Response Semantics remains fail-closed",
+  "significance": "R3",
+  "event_type": "PRODUCT",
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "status": "ACTIVE",
+  "source_repository": {
+    "name": "15937-ass/ziwei-state-space",
+    "ref": "main",
+    "commit_sha": "11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86"
+  },
+  "research_question": "How does Product consume reviewed Knowledge without allowing semantic representation or an updated file to silently authorize runtime behavior?",
+  "before_state": "A source-reviewed semantic record or a newly available Knowledge artifact could be mistaken for a compiled and executable Product rule.",
+  "result": "The active Product Knowledge lock pins KIB-PRODUCT-20261021-V0_3 with artifact and semantic digests, records its source commit, disables auto-refresh, and defines rollback to a previous validated bundle. Response Semantics v0.2/v0.3 separately reports 8/8 pilot records preserved as semantic-only, 0/8 runtime effects authorized, and for Career 12 condition-IR-ready rows pending Product compilation with 14 local-ready rows still not condition-IR-ready; compilation and execution unlock remain zero.",
+  "key_insights": [
+    "The active lock is a versioned Product dependency, not a promise that every downstream component is fully validated.",
+    "Response semantic expressibility is distinct from permission to cause runtime effects.",
+    "The current readiness census is explicit about zero compiled conditions and zero execution unlocks.",
+    "A promotion acceptance document still labels its validation pending while the current lock says KIB v0.3 is active; this is a documentation/status discrepancy to preserve and reconcile, not silently resolve."
+  ],
+  "negative_findings": [
+    "No Response Compiler, ResponseProfile tau, M0 manifestation, empirical probability or predictive validity is claimed by the cited promotion note.",
+    "A semantic-only record or synthetic positive-path fixture does not authorize real runtime effects."
+  ],
+  "unexpected_findings": [],
+  "claim_effects": {
+    "supported": [
+      "CL-007",
+      "CL-010"
+    ],
+    "weakened": [],
+    "superseded": [],
+    "opened": []
+  },
+  "boundaries": {
+    "source_status": "Explicit in the accepted lock and adapter/readiness artifacts; one acceptance note has a stale/pending status that remains visible.",
+    "implementation_status": "Version lock is active; semantic adapter/readiness exists; compiler and runtime effects remain unauthorized in the cited readiness baseline.",
+    "internal_fidelity": "No new test execution was performed in this Sidecar task.",
+    "empirical_status": "No predictive or calibration result.",
+    "causal_status": "No causal claim."
+  },
+  "paper_targets": [],
+  "artifacts": [
+    {
+      "label": "Active Product Knowledge lock v0.3",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_KNOWLEDGE.lock.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_KNOWLEDGE.lock.json",
+      "blob_sha": "39985e1be3d974b414e683925f4a135c0dc69e91"
+    },
+    {
+      "label": "Response Semantics Product Adapter v0.2",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/RESPONSE_SEMANTICS_ADAPTER_V0_2.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/RESPONSE_SEMANTICS_ADAPTER_V0_2.md",
+      "blob_sha": "b354f256f084cc5353be8827948fae3f246473fe"
+    },
+    {
+      "label": "Response Semantics adapter readiness v0.3",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/RESPONSE_SEMANTICS_ADAPTER_READINESS_v0.3.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/RESPONSE_SEMANTICS_ADAPTER_READINESS_v0.3.json",
+      "blob_sha": "a537ced6040dc2116cfc8ef274a0cc4b0292dba5"
+    },
+    {
+      "label": "Career Response v0.16 promotion acceptance note",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_KNOWLEDGE_PROMOTION_CAREER_RESPONSE_V0_16_ACCEPTANCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_KNOWLEDGE_PROMOTION_CAREER_RESPONSE_V0_16_ACCEPTANCE.md",
+      "blob_sha": "6028e669d8d0e0dc2fc4d66f5d8fdb459d45bab4",
+      "note": "This file still labels validation pending; the active lock separately records KIB v0.3 as active. Preserve this status discrepancy rather than infer that every downstream validation is complete."
+    },
+    {
+      "label": "Product lane state cache",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_STATE.yaml",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_STATE.yaml",
+      "blob_sha": "6d9d367f00b159fa8e5006f564b7ff4640c0ece6",
+      "note": "State cache itself says it is as of an earlier Product commit; live issues and accepted main artifacts remain authoritative."
+    }
+  ],
+  "authority_notes": "The current lock's active flag is a direct repository fact. It does not supersede the acceptance note's explicit validation-pending statement for all purposes; the discrepancy should be checked against live Product issues/PRs in a future audit. This Sidecar records, but does not change, Product or Knowledge semantics.",
+  "supersedes": [],
+  "superseded_by": []
+}

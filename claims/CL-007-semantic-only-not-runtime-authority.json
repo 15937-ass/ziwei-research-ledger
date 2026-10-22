@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CLAIM",
+  "claim_id": "CL-007",
+  "title": "Semantic representation does not authorize runtime effect",
+  "claim": "In the accepted Response Semantics/Product adapter baseline, semantic records can be preserved for interpretation while runtime effects remain explicitly unauthorized; the cited v0.3 readiness snapshot reports 0/8 pilot runtime effects authorized and 0 Career conditions compiled or execution-unlocked.",
+  "claim_domain": "PRODUCT_BEHAVIOR",
+  "evidence_basis": "PROJECT_ARTIFACT",
+  "status": "ACTIVE",
+  "source_status": "EXPLICIT",
+  "implementation_status": "IMPLEMENTED",
+  "internal_fidelity": "UNTESTED",
+  "empirical_status": "NOT_APPLICABLE",
+  "causal_status": "NOT_APPLICABLE",
+  "maturity_note": "The adapter and readiness files explicitly implement/report fail-closed mapping. No new test suite was run during this Sidecar backfill.",
+  "wording_ceiling": "Say 'semantic-only / fail-closed under the cited readiness snapshot'; do not say semantic representation is executable or that current runtime effects have been authorized.",
+  "evidence_refs": [
+    {
+      "label": "Response Semantics Product Adapter v0.2",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/RESPONSE_SEMANTICS_ADAPTER_V0_2.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/RESPONSE_SEMANTICS_ADAPTER_V0_2.md",
+      "blob_sha": "b354f256f084cc5353be8827948fae3f246473fe"
+    },
+    {
+      "label": "Response Semantics adapter readiness v0.3",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/RESPONSE_SEMANTICS_ADAPTER_READINESS_v0.3.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/RESPONSE_SEMANTICS_ADAPTER_READINESS_v0.3.json",
+      "blob_sha": "a537ced6040dc2116cfc8ef274a0cc4b0292dba5"
+    },
+    {
+      "label": "Career contextual activation closure v0.16",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp07c/CAREER_CONTEXTUAL_ACTIVATION_CLOSURE_251_v0.16.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp07c/CAREER_CONTEXTUAL_ACTIVATION_CLOSURE_251_v0.16.json",
+      "blob_sha": "d413669303375d7fc36624c33fde9c02f6ae8306"
+    }
+  ],
+  "limitations": [
+    "The readiness snapshot is versioned; any later promotion must be checked against its exact active lock and live Product state.",
+    "Synthetic positive-path fixtures are not real corpus execution authorization."
+  ],
+  "last_updated": "2026-10-22",
+  "supersedes": [],
+  "superseded_by": []
+}

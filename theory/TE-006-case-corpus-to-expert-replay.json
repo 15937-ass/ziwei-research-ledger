@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "record_type": "THEORY_EVOLUTION",
+  "theory_id": "TE-006",
+  "title": "From case availability to staged expert-method replay",
+  "status": "PROVISIONAL_RESEARCH_NOTE",
+  "epistemic_class": "RESEARCH_HYPOTHESIS",
+  "old_model": "A source-backed case corpus and a blind split could be treated as if the system had already reproduced the expert's reasoning method.",
+  "observed_limitations": [
+    "Target-palace evidence is not a full chart.",
+    "Retrieval and action selection readiness do not establish that the correct procedural method was applied.",
+    "A source outcome or expert prose can leak into blind evaluation if identities and source conclusions are not separated.",
+    "A unique target-palace anchor match is only a gate for later full-chart materialization; it is not equivalence with every source-chart annotation."
+  ],
+  "current_model": "Represent corpus inventory, blind-safe evidence materialization, retrieval readiness, action-selection readiness, source-input reconstruction readiness, full-chart materialization, full expert replay, method-fidelity evaluation and predictive evaluation as separate maturity stages. The current accepted source reconstruction result evaluates 37 bounded candidates: 11 unique target-anchor matches are eligible for a later full-chart materialization step; 6 remain ambiguous, 5 do not match the anchor, and 2 are source-incomplete. Full-chart materialization and expert replay remain pending.",
+  "rationale": "The accepted Wang corpus/readiness artifacts distinguish 24 target-palace anchors from full charts. Product #545 / PR #554 adds a pinned, source-bounded candidate reconstruction probe and classifies all 37 candidate inputs without collapsing ambiguity.",
+  "consequences": [
+    "Materialize full charts and bind method patterns to case target scopes before claiming replay.",
+    "Keep source identities, expert reasoning, conclusions, outcomes and external biography out of blind views.",
+    "Use the first benchmark to test method reconstruction, not real-world predictive accuracy.",
+    "Only UNIQUE_ANCHOR_MATCH cases may proceed to the separate full-chart materialization work unit; ambiguous, no-match, source-incomplete or engine-unsupported cases remain withheld."
+  ],
+  "what_remains_valid": [
+    "The 24 source cases and LOCO split are useful structured assets.",
+    "Target-palace facts can support bounded retrieval/action-selection diagnostics.",
+    "The method-policy readiness file is useful for identifying blockers, not as a performance score."
+  ],
+  "claim_effects": [
+    "Supports CL-008."
+  ],
+  "provenance": [
+    {
+      "label": "Wang Tingzhi 24-case corpus acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_EXPERT_CASE_CORPUS_ACCEPTANCE_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_EXPERT_CASE_CORPUS_ACCEPTANCE_v0.1.md",
+      "blob_sha": "7145a311fcd3eb78e9c00f7b63b81b2c602a3839"
+    },
+    {
+      "label": "Wang blind-evidence materialization acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_BLIND_EVIDENCE_MATERIALIZATION_V0_1_ACCEPTANCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_BLIND_EVIDENCE_MATERIALIZATION_V0_1_ACCEPTANCE.md",
+      "blob_sha": "063e92a84beae349849ae5b139b387a528ee1dbd"
+    },
+    {
+      "label": "Wang method-policy readiness v0.2",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/WANG_METHOD_POLICY_READINESS_v0.2.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_METHOD_POLICY_READINESS_v0.2.json",
+      "blob_sha": "375d438346b9dd696b336a39311b60bd5568d2fb"
+    },
+    {
+      "label": "Product lane state cache",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/product/PRODUCT_STATE.yaml",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_STATE.yaml",
+      "blob_sha": "6d9d367f00b159fa8e5006f564b7ff4640c0ece6",
+      "note": "State cache itself says it is as of an earlier Product commit; live issues and accepted main artifacts remain authoritative."
+    },
+    {
+      "label": "Wang source-input reconstruction acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/WANG_SOURCE_RECONSTRUCTION_V0_1_ACCEPTANCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_SOURCE_RECONSTRUCTION_V0_1_ACCEPTANCE.md",
+      "blob_sha": "71a1735830f6d7feb54975ab47d906a78ea38ceb"
+    },
+    {
+      "label": "Wang full-chart reconstruction readiness v0.1",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/expert_cases/wang_tingzhi/FULL_CHART_RECONSTRUCTION_READINESS_V0_1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/expert_cases/wang_tingzhi/FULL_CHART_RECONSTRUCTION_READINESS_V0_1.json",
+      "blob_sha": "a0ec93c5a17859a64d02eb029837c787c7b12bdf"
+    },
+    {
+      "label": "Wang source birth signatures v0.1",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/expert_cases/wang_tingzhi/SOURCE_BIRTH_SIGNATURES_V0_1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/expert_cases/wang_tingzhi/SOURCE_BIRTH_SIGNATURES_V0_1.json",
+      "blob_sha": "83800555169c4225427dbc35ae50e4ec21cf2257"
+    },
+    {
+      "label": "Current Product lane state cache after Product #545",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/PRODUCT_STATE.yaml",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_STATE.yaml",
+      "blob_sha": "ea95cc6e373da56a8e2e9907004ea51d6da0870c",
+      "note": "Names WANG_FULL_CHART_MATERIALIZATION_V0_1B as next work; it does not claim the 11 eligible charts are already materialized."
+    }
+  ],
+  "boundaries": [
+    "Provisional research-method framing; not a canonical rule or completed benchmark result.",
+    "No Product work or new benchmark run is performed by this Sidecar record.",
+    "The reconstruction readiness probe is a source-bounded internal check, not expert-method fidelity or predictive-validity evidence."
+  ],
+  "captured_at": "2026-10-22T22:00:00+08:00",
+  "supersedes": [],
+  "superseded_by": []
+}

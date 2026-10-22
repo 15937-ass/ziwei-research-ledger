@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CLAIM",
+  "claim_id": "CL-006",
+  "title": "Career ID closure is not execution closure",
+  "claim": "Career's 888/888 structured-ID census means every canonical ID has a traceable disposition; it does not mean all 888 rules are executable. The accepted backlog still records 513 BLOCKED_OUTCOME_MAPPING entries, while the separate 251-row contextual-activation closure reports 0 conditions compiled and 0 execution unlocks.",
+  "claim_domain": "PROJECT_METHOD",
+  "evidence_basis": "PROJECT_ARTIFACT",
+  "status": "ACTIVE",
+  "source_status": "EXPLICIT",
+  "implementation_status": "PARTIALLY_IMPLEMENTED",
+  "internal_fidelity": "NOT_APPLICABLE",
+  "empirical_status": "NOT_APPLICABLE",
+  "causal_status": "NOT_APPLICABLE",
+  "maturity_note": "The counts are explicit in accepted main artifacts. The 888-rule and 251-row censuses have different denominators; 228/228 deep-source review refers to blocked rows in the latter and must not be conflated with the 513 outcome-mapping blockers.",
+  "wording_ceiling": "Say 'Career IDs have disposition coverage, with substantial semantic/ontology blockers remaining'; do not say 888 executable rules or completed Career inference.",
+  "evidence_refs": [
+    {
+      "label": "Career blocker ontology backlog — 888 IDs and 513 outcome-mapping blockers",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp07c/CAREER_BLOCKER_ONTOLOGY_BACKLOG_v0.1.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp07c/CAREER_BLOCKER_ONTOLOGY_BACKLOG_v0.1.md",
+      "blob_sha": "f9566ce907a1973864239511ab832a64429670ac"
+    },
+    {
+      "label": "Career contextual activation closure v0.16",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp07c/CAREER_CONTEXTUAL_ACTIVATION_CLOSURE_251_v0.16.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp07c/CAREER_CONTEXTUAL_ACTIVATION_CLOSURE_251_v0.16.json",
+      "blob_sha": "d413669303375d7fc36624c33fde9c02f6ae8306"
+    },
+    {
+      "label": "Career compiler-readiness census — 26 candidates",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/11f9eedd6bfcb05e5d0fcb2f17327bc3c288de86/knowledge/wp08/CAREER_COMPILER_READINESS_CENSUS_26_v0.1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/wp08/CAREER_COMPILER_READINESS_CENSUS_26_v0.1.json",
+      "blob_sha": "71317dec9356b4b53601d123744c2f009af0e972"
+    }
+  ],
+  "limitations": [
+    "The 513 BLOCKED_OUTCOME_MAPPING figure is from the 888-ID Career backlog census.",
+    "The 228/228 deep-review partition belongs to the 251-row contextual-activation closure.",
+    "Product compilation and runtime authorization are not established by source review."
+  ],
+  "last_updated": "2026-10-22",
+  "supersedes": [],
+  "superseded_by": []
+}
