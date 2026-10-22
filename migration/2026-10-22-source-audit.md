@@ -133,3 +133,25 @@ Only the 11 unique matches are eligible for a subsequent full-chart materializat
 The merged PR and acceptance artifact report that the pinned reconstruction probe passed and that 2,376 pytest tests passed. These are existing accepted-main validation records; no GitHub Actions were invoked during this Sidecar task.
 
 This commit is classified as R2 method/reconstruction-readiness progress and captured as RM-2026-009. RESEARCH_STATE.yaml advances to the inspected source-main SHA only after this classification. `history_replay_complete` remains false because the Sidecar is still a curated backfill, not a full historical replay.
+
+
+## 9. Main advanced during RSM-2: Knowledge P01 source-gap closure (R2)
+
+A final checkpoint recheck found one new source-main commit after the Wang reconstruction milestone:
+
+- Previous checkpoint: `81fca994340e06a4b0f3dc3c31427b3f24a2a62d`
+- Current source main: `9735cd7a78a3c0addcf93aad1730d775e691be40`
+- Compare result: one commit ahead, zero behind.
+- Commit: Knowledge(P01) — close Life source gaps on printed pp5–9.
+- PR #577 is merged and Issue #574 is closed as completed.
+
+Accepted main artifacts report:
+- 21 previously registered gap IDs dispositioned;
+- 20 closed by new source-first supplement records and 1 already covered by canonical P02-200;
+- 77 atomic supplemental records: 64 reusable projection rules and 13 CASE_SUPPORT_ONLY records;
+- cumulative P01 canonical records: 277 (213 reusable, 64 case-support-only);
+- zero new shared semantic primitives, memory types, independent time scales, numeric weights, probabilities or decay.
+
+This is a bounded closure of the registered gap set, not a claim that every possible claim on printed pp5–9 has been extracted or that the entire P01 source corpus is complete. The commit is classified as R2 source-gap progress and recorded as RM-2026-010. Its accepted PR reports the final-head test/audit/governance gate passed; no GitHub Actions were invoked by this Sidecar task.
+
+RESEARCH_STATE.yaml advances to `9735cd7a78a3c0addcf93aad1730d775e691be40` only after this classification. `history_replay_complete` remains false.
