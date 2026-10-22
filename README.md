@@ -31,4 +31,4 @@ This repository stores non-authoritative research memory: major research events,
 
 The initial records are a **curated historical seed**, not a complete replay of every historical commit or chat. The checkpoint records the main-repository SHA examined for this seed. Historical manuscript text is a snapshot/output, not project memory and not independent evidence of predictive validity.
 
-See [Issue #1](https://github.com/15937-ass/ziwei-research-ledger/issues/1) for the bounded bootstrap work unit.
+See [Issue #1](https://github.com/15937-ass/ziwei-research-ledger/issues/1) for the bounded bootstrap and [Issue #5](https://github.com/15937-ass/ziwei-research-ledger/issues/5) for the targeted evidence backfill.
