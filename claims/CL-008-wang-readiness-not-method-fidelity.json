@@ -3,7 +3,7 @@
   "record_type": "CLAIM",
   "claim_id": "CL-008",
   "title": "Wang case replay readiness is not expert-method fidelity",
-  "claim": "The Wang Tingzhi corpus contains 24 source cases and 24 target-palace evidence materializations, with retrieval and action selection marked ready for all 24 folds; the cited readiness v0.2 still reports 0/24 full expert replay readiness and 24/24 full-chart blockers.",
+  "claim": "The Wang Tingzhi corpus contains 24 source cases and 24 target-palace evidence materializations, with retrieval and action selection marked ready for all 24 folds; the earlier method-policy readiness v0.2 reports 0/24 full expert replay readiness. Later accepted source-input reconstruction evaluates 37 bounded candidate inputs and finds 11 unique target-anchor matches, 6 multiple matches, 5 no matches, 2 source-incomplete cases and 0 engine-unsupported candidates. Only the 11 unique matches are eligible for later full-chart materialization; full-chart materialization and expert replay are still not complete.",
   "claim_domain": "RESEARCH_HYPOTHESIS",
   "evidence_basis": "PROJECT_ARTIFACT",
   "status": "ACTIVE",
@@ -12,8 +12,8 @@
   "internal_fidelity": "UNTESTED",
   "empirical_status": "UNTESTED",
   "causal_status": "NONE",
-  "maturity_note": "The corpus and blind target-palace evidence are materialized, but the full chart is not materialized and the method patterns do not directly target the twelve case domains. The readiness file explicitly says it is not method-fidelity or predictive-validity evidence.",
-  "wording_ceiling": "Say 'source-grounded 24-case corpus with partial replay readiness'; do not claim completed expert replay, method fidelity, or predictive validity.",
+  "maturity_note": "The earlier readiness v0.2 is a historical readiness snapshot. Product #545 / PR #554 later added a source-bounded reconstruction readiness layer, but current Product state names WANG_FULL_CHART_MATERIALIZATION_V0_1B as next work. The 11 unique anchor matches are eligible for later materialization, not full-chart equivalence or expert replay.",
+  "wording_ceiling": "Say '24-case source corpus with partial readiness; 11 cases are eligible for later full-chart materialization under a target-palace anchor gate, while 13 remain withheld and full expert replay is not ready'; do not claim completed full charts, method fidelity, or predictive validity.",
   "evidence_refs": [
     {
       "label": "Wang Tingzhi 24-case corpus acceptance",
@@ -35,12 +35,44 @@
       "authority_status": "ACCEPTED_MAIN",
       "repository_path": "product/WANG_METHOD_POLICY_READINESS_v0.2.json",
       "blob_sha": "375d438346b9dd696b336a39311b60bd5568d2fb"
+    },
+    {
+      "label": "Wang source-input reconstruction acceptance",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/WANG_SOURCE_RECONSTRUCTION_V0_1_ACCEPTANCE.md",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/WANG_SOURCE_RECONSTRUCTION_V0_1_ACCEPTANCE.md",
+      "blob_sha": "71a1735830f6d7feb54975ab47d906a78ea38ceb"
+    },
+    {
+      "label": "Wang full-chart reconstruction readiness v0.1",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/expert_cases/wang_tingzhi/FULL_CHART_RECONSTRUCTION_READINESS_V0_1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/expert_cases/wang_tingzhi/FULL_CHART_RECONSTRUCTION_READINESS_V0_1.json",
+      "blob_sha": "a0ec93c5a17859a64d02eb029837c787c7b12bdf"
+    },
+    {
+      "label": "Wang source birth signatures v0.1",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/expert_cases/wang_tingzhi/SOURCE_BIRTH_SIGNATURES_V0_1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/expert_cases/wang_tingzhi/SOURCE_BIRTH_SIGNATURES_V0_1.json",
+      "blob_sha": "83800555169c4225427dbc35ae50e4ec21cf2257"
+    },
+    {
+      "label": "Current Product lane state cache after Product #545",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/81fca994340e06a4b0f3dc3c31427b3f24a2a62d/product/PRODUCT_STATE.yaml",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "product/PRODUCT_STATE.yaml",
+      "blob_sha": "ea95cc6e373da56a8e2e9907004ea51d6da0870c",
+      "note": "Names WANG_FULL_CHART_MATERIALIZATION_V0_1B as next work; it does not claim the 11 eligible charts are already materialized."
     }
   ],
   "limitations": [
     "Only source-visible target-palace major-star facts are materialized in the blind evidence layer.",
+    "Source reconstruction compares target-palace identity and the fourteen-major-star anchor (or explicitly borrowed opposite-palace anchor); it does not establish full-source-chart equivalence.",
+    "11 unique target-anchor matches are eligible for later full-chart materialization, but that later materialization remains a separate Product work unit.",
+    "The six multiple matches, five no-anchor matches and two source-incomplete cases remain withheld.",
     "Subject identity, expert prose, conclusions, outcomes and external biography must remain unavailable to the blind evaluator.",
-    "Full replay requires full-chart materialization and target-scope method binding."
+    "Full expert replay requires full-chart materialization and target-scope method binding."
   ],
   "last_updated": "2026-10-22",
   "supersedes": [],
