@@ -9,7 +9,9 @@ checkpoint_mode: "CURATED_BOOTSTRAP_PLUS_REVIEWED_R1_R2_CATCHUP"
 history_replay_complete: false
 research_schema_version: "1.0"
 migration_status: "CURATED_BOOTSTRAP_COMPLETE_WITH_LIMITATIONS"
-backfill_status: "RSM2_CANDIDATE_PENDING_REVIEW"
+backfill_status: "RSM2_COMPLETE_WITH_LIMITATIONS"
+backfill_pr: 6
+backfill_merge_sha: "760b2d1025214aef273979d536a16401a2b0766f"
 bootstrap_pr: 2
 bootstrap_merge_sha: "a3c50056f5c239823abe71c9f13df459d74ad12f"
 seeded_events:
@@ -68,4 +70,5 @@ notes:
   - "Main advanced from 11f9eedd to 81fca994 through merged Product #545 / PR #554; the change was classified as R2 and recorded as RM-2026-009."
   - "The 11 Wang unique target-anchor matches are eligible for a later full-chart materialization step; they are not described as already materialized or expert-replayed."
   - "Main advanced from 81fca994 to 9735cd7a via merged Knowledge PR #577; the 21 registered P01 pp5-9 gaps were classified as a bounded R2 source-gap closure and recorded as RM-2026-010."
-  - "RSM-2 is a review candidate until its Sidecar PR is accepted."
+  - "RSM-2 was accepted into Sidecar main by PR #6 at merge SHA 760b2d1025214aef273979d536a16401a2b0766f."
+  - "RSM-2 remains a curated backfill; history_replay_complete stays false and capture is manual/on-demand."
