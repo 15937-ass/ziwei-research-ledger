@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "record_type": "CLAIM",
+  "claim_id": "CL-012",
+  "title": "P01 pp5-9 source-gap closure is bounded to 21 registered gaps",
+  "claim": "The accepted P01 supplement closes all 21 previously registered source-gap IDs for printed pages 5–9: 20 receive new source-first supplement records and one is already covered by canonical P02-200. It adds 77 atomic records (64 reusable projection rules and 13 CASE_SUPPORT_ONLY records), bringing cumulative P01 canonical records to 277 (213 reusable and 64 case-support-only). The artifact explicitly does not claim that every possible claim on those pages has been independently re-extracted beyond the registered gaps.",
+  "claim_domain": "PROJECT_METHOD",
+  "evidence_basis": "PROJECT_ARTIFACT",
+  "status": "ACTIVE",
+  "source_status": "EXPLICIT",
+  "implementation_status": "IMPLEMENTED",
+  "internal_fidelity": "CONTRACT_PASS",
+  "empirical_status": "NOT_APPLICABLE",
+  "causal_status": "NOT_APPLICABLE",
+  "maturity_note": "Accepted main commit 9735cd7a78a3c0addcf93aad1730d775e691be40 merges Product-independent Knowledge source-gap closure via PR #577. The final-head quality gate passed as recorded by that PR; no checks were rerun by this Sidecar task.",
+  "wording_ceiling": "Say 'the 21 registered P01 source gaps on printed pp5-9 were dispositioned, with 77 source-bounded supplement records'; do not claim complete extraction of all content on pp5-9 or completion of the entire P01 corpus.",
+  "evidence_refs": [
+    {
+      "label": "P01 Life source-gap summary, printed pp5-9",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/9735cd7a78a3c0addcf93aad1730d775e691be40/knowledge/palaces/P01_life/wp05/LIFE_SOURCE_GAP_SUMMARY_PP5_9_v0.1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/palaces/P01_life/wp05/LIFE_SOURCE_GAP_SUMMARY_PP5_9_v0.1.json",
+      "blob_sha": "d3e321f7717a309ad3c61f293f832b533604e96c"
+    },
+    {
+      "label": "P01 Life source-gap closure ledger, printed pp5-9",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/9735cd7a78a3c0addcf93aad1730d775e691be40/knowledge/palaces/P01_life/wp05/LIFE_SOURCE_GAP_CLOSURE_LEDGER_PP5_9_v0.1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/palaces/P01_life/wp05/LIFE_SOURCE_GAP_CLOSURE_LEDGER_PP5_9_v0.1.json",
+      "blob_sha": "e2803555babef4264c9ef8223ced2349fda632d6"
+    },
+    {
+      "label": "P01 Life source time-scope supplement, printed pp5-9",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/9735cd7a78a3c0addcf93aad1730d775e691be40/knowledge/palaces/P01_life/wp05/LIFE_SOURCE_GAP_TIME_SCOPE_PP5_9_v0.1.json",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/palaces/P01_life/wp05/LIFE_SOURCE_GAP_TIME_SCOPE_PP5_9_v0.1.json",
+      "blob_sha": "e8578e254559445860de5b3531bc429c9b5041c8"
+    },
+    {
+      "label": "P01 Life shard state after source-gap closure",
+      "url": "https://github.com/15937-ass/ziwei-state-space/blob/9735cd7a78a3c0addcf93aad1730d775e691be40/knowledge/states/P01_LIFE_STATE.yaml",
+      "authority_status": "ACCEPTED_MAIN",
+      "repository_path": "knowledge/states/P01_LIFE_STATE.yaml",
+      "blob_sha": "796017ce20114fcf2f22a577b99bfda1dcd1733c",
+      "note": "State cache reports the registered source-gap closure and cumulative record counts; live Issues/PRs remain execution truth."
+    },
+    {
+      "label": "PR #577 — merged P01 Life source-gap closure",
+      "url": "https://github.com/15937-ass/ziwei-state-space/pull/577",
+      "authority_status": "MERGED_PR",
+      "note": "Merged as commit 9735cd7a78a3c0addcf93aad1730d775e691be40. Its final-head quality gate reports full pytest, Node syntax check, P0 audit and governance validation passed; no Actions were invoked by this Sidecar task."
+    }
+  ],
+  "limitations": [
+    "The supplement closes registered gaps from prior readjudication summaries; it is not a full re-extraction of every possible claim on printed pp5-9.",
+    "13 of the 77 records are CASE_SUPPORT_ONLY and must not be promoted to reusable rules.",
+    "One gap was already covered by P02-200 and is not duplicated.",
+    "No new shared semantic primitive, memory type, independent time scale, numeric weight, probability or decay was added.",
+    "Further P01 source-first audit work remains in the Knowledge lane."
+  ],
+  "last_updated": "2026-10-22",
+  "supersedes": [],
+  "superseded_by": []
+}
