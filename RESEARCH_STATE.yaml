@@ -64,7 +64,7 @@ notes:
   - "Main advanced from the seed SHA by one reviewed R1 commit during bootstrap; checkpoint advanced only after classifying it."
   - "RSM-1 bootstrap was accepted into Sidecar main by PR #2 at the recorded merge SHA."
   - "Capture remains manual/on-demand; no automated ingestion or GitHub Actions workflow is introduced."
-  - "RSM-2 adds five research events, six claims, two theory records and four evidence packs; all PR #289 measurements remain labelled UNMERGED_PR."
+  - "RSM-2 adds six research events, seven claims, two theory records and five evidence packs; all PR #289 measurements remain labelled UNMERGED_PR."
   - "Main advanced from 11f9eedd to 81fca994 through merged Product #545 / PR #554; the change was classified as R2 and recorded as RM-2026-009."
   - "The 11 Wang unique target-anchor matches are eligible for a later full-chart materialization step; they are not described as already materialized or expert-replayed."
   - "Main advanced from 81fca994 to 9735cd7a via merged Knowledge PR #577; the 21 registered P01 pp5-9 gaps were classified as a bounded R2 source-gap closure and recorded as RM-2026-010."
