@@ -15,9 +15,9 @@ Use the matching JSON Schema under schemas/ and copy a record with the same type
 
 ## Current examples
 
-- Research Events: events/RM-2026-001 through RM-2026-004
-- Claims: claims/CL-001 through CL-005
-- Theory Evolution: theory/TE-001 through TE-004
+- Research Events: events/RM-2026-001 through RM-2026-009
+- Claims: claims/CL-001 through CL-011
+- Theory Evolution: theory/TE-001 through TE-006
 - Concept Event: events/CE-2026-001
 - Paper Map: paper_map/PM-P1-FORMALIZATION.json
-- Evidence Pack: evidence_packs/EP-001.json
+- Evidence Packs: evidence_packs/EP-001.json through EP-005.json
