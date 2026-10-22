@@ -73,9 +73,9 @@ This commit was inspected and classified as **R1 cumulative Knowledge progress**
 The new commit is a Knowledge-lane artifact. This sidecar records only the replay/checkpoint decision; it does not modify the source Knowledge files or promote their semantics.
 
 
-## 7. RSM-2 targeted historical evidence backfill (review candidate)
+## 7. RSM-2 targeted historical evidence backfill (accepted by PR #6)
 
-The following records were added on Sidecar branch `research/5-evidence-backfill`. They remain candidate records until the Sidecar PR is accepted.
+The following records were added on Sidecar branch `research/5-evidence-backfill` and accepted into Sidecar main by PR #6 at merge SHA `760b2d1025214aef273979d536a16401a2b0766f`.
 
 ### 7.1 Career census versus execution readiness
 
